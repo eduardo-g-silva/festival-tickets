@@ -1,0 +1,13 @@
+/nbproject/
+/protected/common/config/instance.php
+/protected/common/config/instance.install.php
+/resources/
+/runtime/
+/protected/common/config/instancetest.php
+/protected/common/config/instanceConfig.php
+/assets/
+/backend/assets/
+/vendor/
+/data/installdata.sql
+/protected/backend/runtime/
+/protected/frontend/runtime/
