@@ -14,6 +14,12 @@ return ArrayHelper::merge(
                                             'poweredByUrl'  => 'http://whatacart.com',
                                             'environment'   => $environment,
                                             'components' => [
+                                                'stripe' => [
+                                                    'class' => 'alkurn\stripe\Stripe',
+                                                    'publicKey' => "pk_test_Ym7wvHAAVM8o7QC5yYNY7Fp7",
+                                                    'privateKey' => "sk_test_iH62d3PbeiqyRO6lJNiqqBJv",
+                                                    'ClientId' => "ca_xxxxxxxxxxxxxxxxxx",
+                                                ],
                                                 'authorizationManager' => ['class' => 'usni\library\modules\auth\business\AuthManager'],
                                                 'cache' => [
                                                                 'class'     => 'yii\caching\FileCache',
