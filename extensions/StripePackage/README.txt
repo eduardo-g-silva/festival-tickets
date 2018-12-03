@@ -1,0 +1,11 @@
+- On download, unzip the package
+- Within the package you would have 2 zip files installer.zip and stripenstaller.zip. 
+- Unzip the installer.zip and copy the code in the application according to the folder structure within extension module
+- In the admin panel, clear the cache. Now you would be able to see the installer menu under extensions.
+- Click on Installer menu which would ask you for a file upload
+- Upload stripeInstaller.zip and proceed with the steps
+- On successfull install you would have the stripe gateway installed.
+- Go to payment gateway grid view and enable stripe extension.
+- Clear the cache in the admin panel.
+- Rum composer update
+- You are all set to use stripe gateway now.
