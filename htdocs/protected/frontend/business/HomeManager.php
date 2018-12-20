@@ -37,8 +37,9 @@ class HomeManager extends \common\business\Manager
     {
         $itemsPerPage       = ConfigManager::getInstance()->getSettingValue('catalog_items_per_page');
         $dataCategoryId     = StoreDAO::getDataCategoryId($this->selectedStoreId);
-        $latestProducts     = ProductDAO::geLatestStoreProducts($dataCategoryId, $this->language, Product::STATUS_ACTIVE, $itemsPerPage);
-        
+        //$latestProducts     = ProductDAO::geLatestStoreProducts($dataCategoryId, $this->language, Product::STATUS_ACTIVE, $itemsPerPage);
+        $latestProducts     = ProductDAO::getByProductCategoryId(1, $this->language, Product::STATUS_ACTIVE, $itemsPerPage);
+
         foreach($latestProducts as $index => $latestProduct)
         {
             $finalPriceExcludingTax                 = $this->getFinalPrice($latestProduct);
@@ -47,6 +48,7 @@ class HomeManager extends \common\business\Manager
             $latestProduct['requiredOptionsCount']  = $this->getRequiredOptionsCount($latestProduct['id']);
             $latestProducts[$index] = $latestProduct;
         }
-        $homePageDTO->setLatestProducts($latestProducts);
+        //$homePageDTO->setLatestProducts($latestProducts);
+        $homePageDTO->setCompetitorsProducts($latestProducts);
     }
 }

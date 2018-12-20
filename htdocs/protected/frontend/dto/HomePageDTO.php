@@ -12,7 +12,8 @@ namespace frontend\dto;
 class HomePageDTO extends \usni\library\dto\BaseDTO
 {
     private $_latestProducts;
-    
+    private $_competitorsProducts;
+
     public function getLatestProducts()
     {
         return $this->_latestProducts;
@@ -21,5 +22,14 @@ class HomePageDTO extends \usni\library\dto\BaseDTO
     public function setLatestProducts($latestProducts)
     {
         $this->_latestProducts = $latestProducts;
+    }
+    public function getCompetitorsProducts()
+    {
+        return $this->_competitorsProducts;
+    }
+
+    public function setCompetitorsProducts($competitorsProducts)
+    {
+        $this->_competitorsProducts = $competitorsProducts;
     }
 }

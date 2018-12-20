@@ -7,6 +7,6 @@ use usni\UsniAdaptor;
 $this->title = UsniAdaptor::t('application', 'Home');
 
 //egs echo $this->render('/_carousel');
-echo "<h3>" . UsniAdaptor::t('products', 'Latest Products') . "</h3>";
-echo $this->render('/_latestproductslist', ['products' => $homePageDTO->getLatestProducts()]);
+echo "<h3>" . UsniAdaptor::t('products', 'Competitors Passes') . "</h3>";
+echo $this->render('/_homeproductslist', ['products' => $homePageDTO->getCompetitorsProducts()]);
 
