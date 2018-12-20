@@ -49,7 +49,7 @@ use frontend\widgets\CurrencySelector;
                 </div>
             </div>
             <?php //echo $this->render("//common/_navSearch");?>
-            <div class="col-sm-5">
+            <div class="col-sm-4">
                 <?php echo $this->render("//cart/_minicart");?>
             </div>
         </div>
