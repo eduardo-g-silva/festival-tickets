@@ -43,15 +43,13 @@ use frontend\widgets\CurrencySelector;
 <header>
     <div class="container header-row">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div id="logo">
                     <?php echo $this->render("//common/_logo");?>
                 </div>
             </div>
+            <?php //echo $this->render("//common/_navSearch");?>
             <div class="col-sm-5">
-                <?php echo $this->render("//common/_navSearch");?>
-            </div>
-            <div class="col-sm-3">
                 <?php echo $this->render("//cart/_minicart");?>
             </div>
         </div>
