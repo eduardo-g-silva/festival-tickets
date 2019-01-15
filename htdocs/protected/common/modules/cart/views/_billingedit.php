@@ -10,7 +10,7 @@ use usni\library\utils\CountryUtil;
 <div class="row">
     <div class="col-sm-12">
         <p>Type the registration code received in the confirmation email</p>
-        <p>(competitors please add type the word "COMPETITORS")</p>
+        <p>(competitors please type the word "COMPETITORS" in the registration code.)</p>
         <?= $form->field($model, 'registration_code')->textInput();?>
         <hr>
     </div>
