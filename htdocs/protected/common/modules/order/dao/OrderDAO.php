@@ -92,7 +92,7 @@ class OrderDAO
         $sql                    = "SELECT o.*, otr.shipping_comments, 
                                    op.payment_method, op.total_including_tax, op.tax, op.payment_type,
                                    optr.comments, 
-                                   toad.firstname, toad.lastname, toad.email, toad.mobilephone, 
+                                   toad.registration_code, toad.firstname, toad.lastname, toad.email, toad.mobilephone, 
                                    str.name as store_name, tc.symbol_left as currency_symbol
                                    FROM $orderTable o, $orderTrTable otr, $orderPaymentTable op, 
                                     $orderPaymentTrTable optr, $orderAddressTable toad,

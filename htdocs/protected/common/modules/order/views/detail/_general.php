@@ -14,6 +14,7 @@ $widgetParams   = [
                     'model'         => $model,
                     'attributes'    => [
                                             'unique_id',
+                                            'registration_code',
                                             [
                                                 'label'      => UsniAdaptor::t('customer', 'Customer'),
                                                 'attribute'  => 'customer_id',

@@ -5,6 +5,9 @@ use usni\library\utils\CountryUtil;
 /* @var $form \usni\library\bootstrap\ActiveForm */
 ?>
 <div class="row">
+    <div class="col-sm-12">
+        <?= $form->field($model, 'registration_code')->textInput();?>
+    </div>
     <div class="col-sm-6">
         <?= $form->field($model, 'firstname')->textInput();?>
         <?= $form->field($model, 'lastname')->textInput();?>

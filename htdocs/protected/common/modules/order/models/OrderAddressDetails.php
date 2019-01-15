@@ -21,10 +21,10 @@ class OrderAddressDetails extends ActiveRecord
 	public function rules()
 	{
 		return [
-                    [['firstname', 'lastname', 'email', 'address1', 'city', 'postal_code', 'country'],                  'required'],
+                    [['firstname', 'lastname', 'email', 'address1', 'city', 'postal_code', 'country','registration_code'],                  'required'],
                     [['mobilephone', 'officephone'], 'number',              'integerOnly' => true],
                     [['email', 'firstname', 'lastname', 'mobilephone', 'officephone', 'address1', 'address2', 'city', 'country', 'postal_code', 'state', 
-                      'type', 'order_id'],   'safe'],
+                      'type', 'order_id', 'registration_code'],   'safe'],
                ];
 	}
     
@@ -35,7 +35,7 @@ class OrderAddressDetails extends ActiveRecord
     {
         $scenarios = parent::scenarios();
         $scenarios['create'] = $scenarios['update'] = ['email', 'firstname', 'lastname', 'mobilephone', 'officephone', 'address1', 'address2', 'city', 
-                                                       'country', 'postal_code', 'state', 'type', 'order_id'];
+                                                       'country', 'postal_code', 'state', 'type', 'order_id', 'registration_code'];
         return $scenarios;
     }
 
@@ -58,6 +58,7 @@ class OrderAddressDetails extends ActiveRecord
                     'postal_code'  => UsniAdaptor::t('users', 'Postal Code'),
                     'type'         => UsniAdaptor::t('application', 'Type'),
                     'order_id'     => UsniAdaptor::t('order', 'Order'),
+                    'registration_code'     => UsniAdaptor::t('order', 'Registration Code'),
                   ];
         return parent::getTranslatedAttributeLabels($labels);
 	}

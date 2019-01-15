@@ -33,12 +33,15 @@ class HomeManager extends \common\business\Manager
      * @param HomePageDTO $homePageDTO
      * @return array
      */
+
+    // EGS change category
+
     public function setPageData($homePageDTO)
     {
         $itemsPerPage       = ConfigManager::getInstance()->getSettingValue('catalog_items_per_page');
         $dataCategoryId     = StoreDAO::getDataCategoryId($this->selectedStoreId);
         //$latestProducts     = ProductDAO::geLatestStoreProducts($dataCategoryId, $this->language, Product::STATUS_ACTIVE, $itemsPerPage);
-        $latestProducts     = ProductDAO::getByProductCategoryId(6, $this->language, Product::STATUS_ACTIVE, $itemsPerPage);
+        $latestProducts     = ProductDAO::getByProductCategoryId(4, $this->language, Product::STATUS_ACTIVE, $itemsPerPage);
 
         foreach($latestProducts as $index => $latestProduct)
         {

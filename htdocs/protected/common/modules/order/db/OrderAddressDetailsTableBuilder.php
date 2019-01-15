@@ -35,6 +35,7 @@ class OrderAddressDetailsTableBuilder extends TableBuilder
             'postal_code' => Schema::TYPE_STRING . '(16)',
             'state' => Schema::TYPE_STRING . '(20)',
             'type' => $this->integer(2),
+            'registration_code' => Schema::TYPE_STRING . '(128)',
         ];
     }
     

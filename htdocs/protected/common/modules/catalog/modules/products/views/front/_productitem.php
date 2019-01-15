@@ -27,16 +27,18 @@ $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
                 </a>
             </h4>
             <p>
-                <?php 
-                        $desc = strip_tags($model['description']);
-                        if(strlen($desc) > $listDescrLimit)
-                        {
-                            echo substr($desc, 0, $listDescrLimit) . '...';
-                        }
-                        else
-                        {
-                            echo $desc;
-                        }
+                <?php
+
+                //EGS problems local
+//                        $desc = strip_tags($model['description']);
+//                        if(strlen($desc) > $listDescrLimit)
+//                        {
+//                            echo substr($desc, 0, $listDescrLimit) . '...';
+//                        }
+//                        else
+//                        {
+//                            echo $desc;
+//                        }
                     ?>
             </p>
             <p class="price"><?php echo PriceWidget::widget(['priceExcludingTax' => $model['finalPriceExcludingTax'],
