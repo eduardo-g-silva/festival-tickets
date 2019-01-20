@@ -14,12 +14,12 @@ $itemView           = '@products/views/front/_productitemtickets';
 
 
 //View params
-$productWidth       = UsniAdaptor::app()->storeManager->getImageSetting('product_list_image_width', 70);
-$productHeight      = UsniAdaptor::app()->storeManager->getImageSetting('product_list_image_height', 30);
+$productWidth       = UsniAdaptor::app()->storeManager->getImageSetting('product_list_image_width', 150);
+$productHeight      = UsniAdaptor::app()->storeManager->getImageSetting('product_list_image_height', 150);
 $listDescrLimit     = UsniAdaptor::app()->storeManager->getSettingValue('list_description_limit');
 $allowWishList      = UsniAdaptor::app()->storeManager->getSettingValue('allow_wishlist');
 $allowCompare       = UsniAdaptor::app()->storeManager->getSettingValue('allow_compare_products');
-$containerOptions   = ['class' => 'product-layout product-list tickets col-lg-12'];
+$containerOptions   = ['class' => 'product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12'];
 $viewParams         = ['productWidth'       => $productWidth, 
                        'productHeight'      => $productHeight,
                        'listDescrLimit'     => $listDescrLimit, 
@@ -43,7 +43,7 @@ $listViewParams = [
 ?>
 <div class="row">
     <?php
-    //echo ToolbarWidget::widget();
+    echo ToolbarWidget::widget();
     ?>
 </div>
 <br>

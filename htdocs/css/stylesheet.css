@@ -821,3 +821,71 @@ h5.media-heading{
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
 }
+
+/* --------- Tickets ---------------*/
+
+/* product list */
+
+
+
+.product-layout.product-list.tickets {
+	float: left;
+	margin: 0;
+}
+
+.product-layout.product-list.tickets .product-thumb {
+	border: none;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+
+.product-layout.product-list.tickets .caption {
+	padding: 5px;
+	min-height: 50px;
+	float: left;
+	margin: 0;
+	min-width: 60%;
+	text-align: left;
+}
+.product-layout.product-list.tickets .caption p {
+	text-align: left;
+}
+
+.product-layout.product-list.tickets .caption h4 {
+	text-align: left;
+}
+
+
+
+.product-layout.product-list.tickets .price {
+	float: left;
+	padding: 10px;
+	font-size: 1.4em;
+}
+
+.product-layout.product-list.tickets .add-to-cart {
+	float: right;
+	padding: 18px 10px;
+}
+
+
+.product-layout.product-list.tickets  .product-thumb .image img {
+	border: #000 1px solid;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
