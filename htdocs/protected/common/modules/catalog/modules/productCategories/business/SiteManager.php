@@ -45,6 +45,7 @@ class SiteManager extends Manager
         $id             = $listViewDTO->getId();
         $productCat     = ProductCategoryDAO::getById($id, $this->language);
         $searchModel    = new SearchForm(['categoryId' => $id]);
+        $listViewDTO->setSortingOption('model');
         $listViewDTO->setSearchModel($searchModel);
         $listViewDTO->setProductCategory($productCat);
         $listViewDTO->setDataprovider(SearchManager::getInstance()->getDataProvider($listViewDTO));

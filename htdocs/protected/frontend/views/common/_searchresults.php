@@ -13,6 +13,7 @@ use productCategories\widgets\ToolbarWidget;
 $itemView           = '@products/views/front/_productitemtickets';
 
 
+
 //View params
 $productWidth       = UsniAdaptor::app()->storeManager->getImageSetting('product_list_image_width', 70);
 $productHeight      = UsniAdaptor::app()->storeManager->getImageSetting('product_list_image_height', 30);
@@ -43,7 +44,7 @@ $listViewParams = [
 ?>
 <div class="row">
     <?php
-    //echo ToolbarWidget::widget();
+    echo ToolbarWidget::widget();
     ?>
 </div>
 <br>

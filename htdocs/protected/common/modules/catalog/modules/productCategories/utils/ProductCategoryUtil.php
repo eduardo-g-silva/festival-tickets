@@ -44,6 +44,7 @@ class ProductCategoryUtil
                     'namedesc'  => UsniAdaptor::t('products', 'Name(Z-A)'),
                     'priceasc'  => UsniAdaptor::t('products', 'Price(Low > High)'),
                     'pricedesc' => UsniAdaptor::t('products', 'Price(High > Low)'),
+                    'model' => UsniAdaptor::t('products', 'Model'),
                ];
     }
     

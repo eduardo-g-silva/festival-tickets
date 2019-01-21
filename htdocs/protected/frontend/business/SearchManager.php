@@ -39,15 +39,9 @@ class SearchManager extends \common\business\Manager
         $sort   = new Sort([
                 'defaultOrder' => $this->resolveDataProviderSort($listViewDTO->getSortingOption(), $listViewDTO->getDataCategoryId()),
                 'attributes' => [
-                                    'name' =>  [
-                                                'asc' => ['name' => SORT_ASC],
-                                                'desc' => ['name' => SORT_DESC],
-                                                'label' => UsniAdaptor::t('application', 'Name')
-                                               ],
-                                    'price' => [
-                                                'asc' => ['price' => SORT_ASC],
-                                                'desc' => ['price' => SORT_DESC],
-                                                'label' => UsniAdaptor::t('products', 'Price')
+                                    'model' =>  [
+                                                'asc' => ['model' => SORT_ASC],
+                                                'label' => UsniAdaptor::t('application', 'Model')
                                                ]
                                 ],
             ]);
@@ -106,6 +100,10 @@ class SearchManager extends \common\business\Manager
             elseif($sortingOption == 'pricedesc')
             {
                 return ['price' => SORT_DESC];
+            }
+            elseif($sortingOption == 'model')
+            {
+                return ['model' => SORT_ASC];
             }
         }
         return [];

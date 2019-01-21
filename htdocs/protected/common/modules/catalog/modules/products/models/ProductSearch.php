@@ -70,7 +70,7 @@ class ProductSearch extends Product
         $dataProvider   = new ArrayRecordDataProvider([
             'query' => $query,
             'key'   => 'id',
-            'sort'  => ['attributes' => ['name', 'status', 'price', 'quantity', 'model']]
+            'sort'  => ['attributes' => ['model']]
         ]);
 
         // Validate data
