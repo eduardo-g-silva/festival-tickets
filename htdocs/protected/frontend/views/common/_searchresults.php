@@ -44,7 +44,7 @@ $listViewParams = [
 ?>
 <div class="row">
     <?php
-    echo ToolbarWidget::widget();
+    //echo ToolbarWidget::widget();
     ?>
 </div>
 <br>
