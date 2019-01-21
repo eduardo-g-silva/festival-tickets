@@ -877,8 +877,17 @@ h5.media-heading{
 	margin-top: 7px;
 }
 
+h3.home {
+	color: #e4094e;
+	font-size: 1.9em;
+	padding: 0 0 15px 0;
+}
 
-
+.home-info p {
+	font-size: 1.4em;
+	line-height: 1.3em;
+	padding: 5px 0;
+}
 
 
 
