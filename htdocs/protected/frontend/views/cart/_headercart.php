@@ -13,6 +13,7 @@ use usni\fontawesome\FA;
         <?php echo FA::icon("shopping-cart");?> 
         <span id="cart-total"><?php echo $itemCount; ?> <?php echo UsniAdaptor::t('cart', 'Item'); ?>(s) - <?php echo $this->getFormattedPrice($itemCost, $currencyCode); ?></span>
         <span class="caret"></span>
+        <span class="notice">After you had added to the cart click here to checkout and pay.</span>
     </a>
     <ul class="dropdown-menu pull-right">
     <?php
