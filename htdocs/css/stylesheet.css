@@ -889,6 +889,16 @@ h3.home {
 	padding: 5px 0;
 }
 
+span.notice {
+	margin-top: 10px;
+	padding: 5px;
+	text-align: center;
+	border: 2px solid #008000;
+	display: inline-block;
+	color: #008000 !important;
+	cursor: pointer;
+}
+
 
 
 
