@@ -15,7 +15,7 @@ return ArrayHelper::merge(
                                             'environment'   => $environment,
                                             'components' => [
                                                 'urlManager' => array(
-                                                    'hostInfo' => 'http://example.com',
+                                                    'hostInfo' => $hostinfo,
                                                     ),
                                                 'authorizationManager' => ['class' => 'usni\library\modules\auth\business\AuthManager'],
                                                 'cache' => [
