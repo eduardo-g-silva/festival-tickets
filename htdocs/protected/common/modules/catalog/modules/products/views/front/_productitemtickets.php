@@ -11,7 +11,12 @@ use usni\library\utils\Html;
 $addCartLabel       = UsniAdaptor::t('cart', 'Add to Cart');
 $addWishListLabel   = UsniAdaptor::t('wishlist', 'Add to Wish List');
 $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
+
+// EGS main template
+
+
 ?>
+
 <?php echo Html::beginTag('div', $containerOptions);?>
     <div class="product-thumb transition">
         <div class="image">
