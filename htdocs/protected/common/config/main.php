@@ -14,6 +14,7 @@ return ArrayHelper::merge(
                                             'poweredByUrl'  => 'http://whatacart.com',
                                             'environment'   => $environment,
                                             'components' => [
+                                                'request' => array( 'HostInfo' => $hostinfo ),
                                                 'authorizationManager' => ['class' => 'usni\library\modules\auth\business\AuthManager'],
                                                 'cache' => [
                                                                 'class'     => 'yii\caching\FileCache',
