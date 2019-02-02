@@ -3,6 +3,7 @@
  * @copyright Copyright (C) 2016 Usha Singhai Neo Informatique Pvt. Ltd
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  */
+$_SERVER['HTTPS'] = 1;
 defined('APPLICATION_PATH') or define('APPLICATION_PATH', dirname(__FILE__));
 $instanceDir = APPLICATION_PATH . '/protected/common/config';
 if(file_exists($instanceDir . '/instance.php'))
