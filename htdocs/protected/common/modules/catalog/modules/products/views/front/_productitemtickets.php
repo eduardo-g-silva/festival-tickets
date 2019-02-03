@@ -12,7 +12,7 @@ $addCartLabel       = UsniAdaptor::t('cart', 'Add to Cart');
 $addWishListLabel   = UsniAdaptor::t('wishlist', 'Add to Wish List');
 $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
 
-// EGS main template
+// EGStodo main template lists products
 
 
 ?>
@@ -21,8 +21,7 @@ $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
     <div class="product-thumb transition">
         <div class="image">
             <a href="<?php echo UsniAdaptor::createUrl('/catalog/products/site/detail', ['id' => $model['id']]); ?>">
-                <?php echo FileUploadUtil::getThumbnailImage($model, 'image', ['thumbWidth' => $productWidth, 
-                                                                                'thumbHeight' => $productHeight]); ?>
+                <?php echo FileUploadUtil::getThumbnailImage($model, 'image', ['thumbWidth' => $productWidth, 'thumbHeight' => $productHeight]); ?>
             </a>
         </div>
         <div class="caption">  

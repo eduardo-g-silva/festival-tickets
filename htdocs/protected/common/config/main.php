@@ -14,9 +14,17 @@ return ArrayHelper::merge(
                                             'poweredByUrl'  => 'http://whatacart.com',
                                             'environment'   => $environment,
                                             'components' => [
-                                                'urlManager' => array(
-                                                    'hostInfo' => $hostinfo,
-                                                    ),
+//                                                'urlManager' => array(
+//                                                    'class' => 'UrlManager',
+//                                                    'urlFormat' => 'path',
+//                                                    'hostInfo' => $hostInfo,
+//                                                    'secureHostInfo' => $secureHostInfo,
+//                                                    'secureRoutes' => array(
+//                                                        'site/login',   // site/login action
+//                                                        'site/signup',  // site/signup action
+//                                                        'settings',     // all actions of SettingsController
+//                                                    ),
+//                                                ),
                                                 'authorizationManager' => ['class' => 'usni\library\modules\auth\business\AuthManager'],
                                                 'cache' => [
                                                                 'class'     => 'yii\caching\FileCache',
