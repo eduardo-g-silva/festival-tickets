@@ -20,14 +20,28 @@ $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
 <?php echo Html::beginTag('div', $containerOptions);?>
     <div class="product-thumb transition">
         <div class="image">
+            <a href="<?php echo UsniAdaptor::createUrl('/catalog/products/site/detail', ['id' => $model['id']]); ?>">
                 <?php echo FileUploadUtil::getThumbnailImage($model, 'image', ['thumbWidth' => $productWidth, 'thumbHeight' => $productHeight]); ?>
+            </a>
         </div>
         <div class="caption">  
             <h4>
+                <a href="<?php echo UsniAdaptor::createUrl('/catalog/products/site/detail', ['id' => $model['id']]); ?>">
                     <?php echo $model['name']; ?>
+                </a>
             </h4>
             <p>
-                <?php echo $model['description']; ?>
+                <?php
+                        $desc = strip_tags($model['description']);
+                        if(strlen($desc) > $listDescrLimit)
+                        {
+                            echo substr($desc, 0, $listDescrLimit) . '...';
+                        }
+                        else
+                        {
+                            echo $desc;
+                        }
+                    ?>
             </p>
         </div>
         <div class="price">
@@ -44,7 +58,7 @@ $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
                 ?>
 
                     <input type="hidden" name="quantity" value="1" />
-                        <button type="button" class="add-cart" data-productid = "<?php echo $model['id'];?>">
+                        <button type="button" data-toggle="tooltip" title="<?php echo $addCartLabel;?>" class="add-cart" data-productid = "<?php echo $model['id'];?>">
                             <i class="fa fa-shopping-cart"></i>
                             <span class="hidden-xs hidden-sm hidden-md"><?php echo $addCartLabel;?></span>
                         </button>
@@ -54,9 +68,9 @@ $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
                 {
                     $url   = UsniAdaptor::createUrl('/catalog/products/site/detail', ['id' => $model['id']]);
                 ?>
-                    <button type="button">
+                    <button type="button" data-toggle="tooltip" title="<?php echo $addCartLabel;?>">
                         <a href="<?php echo $url;?>"><i class="fa fa-shopping-cart"></i></a>
-                        <a href="<?php echo $url;?>"><span><?php echo $addCartLabel;?></span></a>
+                        <a href="<?php echo $url;?>"><span class="hidden-xs hidden-sm hidden-md"><?php echo $addCartLabel;?></span></a>
                     </button>
                 <?php    
                 }
