@@ -46,7 +46,7 @@ $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
                     <input type="hidden" name="quantity" value="1" />
                         <button type="button" class="add-cart" data-productid = "<?php echo $model['id'];?>">
                             <i class="fa fa-shopping-cart"></i>
-                            <span class="hidden-xs hidden-sm hidden-md"><?php echo $addCartLabel;?></span>
+                            <span><?php echo $addCartLabel;?></span>
                         </button>
                 <?php
                 }

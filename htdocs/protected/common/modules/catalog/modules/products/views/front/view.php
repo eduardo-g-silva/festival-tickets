@@ -83,7 +83,7 @@ $this->title                 = $this->product['name'];
                             <li>
                                 <?php echo UsniAdaptor::t('products', 'SKU') ?>:</span><?php echo str_repeat("&nbsp", 4) ?>
                                     <?php echo $this->product['sku'] == null ? $notSet : $this->product['sku']; ?>
-                            <li>
+                            </li>
                             <li>
                                 <?php echo UsniAdaptor::t('products', 'Availability') ?></span>:<?php echo str_repeat("&nbsp", 4) ?>
                                 <?php echo $this->product['availability']; ?>
