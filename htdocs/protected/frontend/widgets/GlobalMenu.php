@@ -39,6 +39,7 @@ class GlobalMenu extends \yii\bootstrap\Widget
     public function createMenuItems($categories)
     {
         $items      = [];
+        $items[] = array('label'   => 'Workshops for:', 'url'     => '#');
         foreach ($categories as $category)
         {
             if($category['displayintopmenu'])

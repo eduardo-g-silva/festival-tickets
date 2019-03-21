@@ -63,4 +63,5 @@ $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
                 ?>
         </div>
     </div>
+<hr>
 <?php echo Html::endTag('div');
