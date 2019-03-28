@@ -24,6 +24,8 @@ if(UsniAdaptor::app()->isInstalled())
     $items[]    = require_once UsniAdaptor::getAlias('@backend') . '/config/menu.php';
     //Sales Menu
     $items[]    = require_once UsniAdaptor::getAlias('@backend') . '/config/salesmenu.php';
+    //Reports Menu
+    $items[]    = require_once UsniAdaptor::getAlias('@backend') . '/config/reportsmenu.php';
 ?>
     <!--Sidebar Begins-->
     <div class="sidebar">

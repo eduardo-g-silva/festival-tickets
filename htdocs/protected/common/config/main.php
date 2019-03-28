@@ -12,6 +12,11 @@ return ArrayHelper::merge(
                                             'version'       => '2.0.2',
                                             'poweredByName' => 'WhatACart',
                                             'poweredByUrl'  => 'http://whatacart.com',
+                                            'modules'   => [
+                                                'report'    =>  [
+                                                    'class' => 'common\modules\report\Report',
+                                                ]
+                                            ],
                                             'environment'   => $environment,
                                             'components' => [
 //                                                'urlManager' => array(
@@ -43,7 +48,7 @@ return ArrayHelper::merge(
                                                                             'fileManagerClass'   => $fileManagerClass,
                                                                             'videoManagerClass'  => $videoManagerClass
                                                                         ],
-                                                'moduleManager'      => ['class' => 'usni\library\components\ModuleManager',
+                                                 'moduleManager'      => ['class' => 'usni\library\components\ModuleManager',
                                                                             'modulePaths' => ['@usni/library/modules', '@common/modules', 
                                                                                        '@backend/modules', '@frontend/modules']],
                                             ],

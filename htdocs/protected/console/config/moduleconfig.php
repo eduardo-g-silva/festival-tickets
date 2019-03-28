@@ -27,6 +27,7 @@ return [
                         'order',
                         'marketing',
                         'marketing/newsletter',
-                        'customer'
+                        'customer',
+                        'report'
                     ]]
 ];

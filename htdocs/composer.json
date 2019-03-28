@@ -25,7 +25,8 @@
         "fortawesome/font-awesome": "*",
         "ushainformatique/yiichimp": "*",
         "yidas/yii2-bower-asset": "^2.0",
-        "alkurn/yii2-stripe": "dev-master"
+        "alkurn/yii2-stripe": "dev-master",
+        "koolphp/koolreport": "^3.25"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",
