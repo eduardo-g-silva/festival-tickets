@@ -51,13 +51,6 @@ Table::create(array(
             "label"=>"Dancers",
             "footer"=>"sum",
             "footerText"=>"<b>Total Dancers:</b> @value"
-        ),
-        "total"=>array(
-            "type"=>"number",
-            "label"=>"Total",
-            "prefix"=>"£",
-            "footer"=>"sum",
-            "footerText"=>"<b>Total:</b> @value"
         )
     ),
     "cssClass"=>array(

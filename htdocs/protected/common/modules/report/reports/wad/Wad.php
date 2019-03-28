@@ -1,11 +1,11 @@
 <?php
-namespace common\modules\report\reports\dancers;
+namespace common\modules\report\reports\wad;
 
 use \koolreport\processes\Group;
 use \koolreport\processes\Sort;
 use \koolreport\processes\Limit;
 
-class Dancers extends \koolreport\KoolReport
+class Wad extends \koolreport\KoolReport
 {
 
     protected function settings()
@@ -20,16 +20,16 @@ class Dancers extends \koolreport\KoolReport
     public function setup()
     {
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold_count WHERE category_id != 4")
-            ->pipe(new Group(array(
-                "by"=>"type",
-                "sum"=>"dancers"
-            )))
+            ->query("SELECT * FROM qry_products_sold WHERE isbn LIKE 'w-ad%'")
+//            ->pipe(new Group(array(
+//                "by"=>"type",
+//                "sum"=>"dancers"
+//            )))
             ->pipe(new Sort(array(
-                "dancers"=>"desc"
+                "isbn"=>"desc"
             )))
             //->pipe(new Limit(array(10)))
-            ->pipe($this->dataStore('dancers'));
+            ->pipe($this->dataStore('wad'));
 
         $this->src('tickets')
             ->query("SELECT * FROM qry_products_sold_count WHERE category_id != 4")
