@@ -48,9 +48,9 @@ class Dancers extends \koolreport\KoolReport
             ->pipe($this->dataStore('map'));
 
         $this->src('tickets')
-            ->query("SELECT created_datetime, isbn, SUM(dancers) AS dancers FROM qry_products_sold WHERE isbn NOT LIKE 'w-%' GROUP BY country")
+            ->query("SELECT created_datetime, dancers FROM qry_products_sold WHERE isbn NOT LIKE 'w-%'")
             ->pipe(new Sort(array(
-                "country"=>"desc"
+                "created_datetime"=>"asc"
             )))
             //->pipe(new Limit(array(10)))
             ->pipe($this->dataStore('byday'));

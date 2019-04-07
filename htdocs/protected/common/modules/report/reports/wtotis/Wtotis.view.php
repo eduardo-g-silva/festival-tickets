@@ -37,7 +37,7 @@ Table::create(array(
         "order_id"=>array(
             "label"=>"Order",
         ),
-        "dancers"=>array(
+        "dancers_qty"=>array(
             "type"=>"number",
             "label"=>"Dancers",
             "footer"=>"sum",
