@@ -20,9 +20,8 @@ class WorkshopsSales extends \koolreport\KoolReport
 
     public function setup()
     {
-
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold where name like 'Aldana%' group by isbn")
+            ->query("SELECT isbn, NAME, `type`,  SUM(dancers_qty) AS dancers, SUM(total) AS total FROM qry_products_sold where name like 'Aldana%' group by isbn")
             ->pipe(new Sort(array(
                 "isbn"=>"asc",
                 'type' => "desc"
@@ -30,7 +29,7 @@ class WorkshopsSales extends \koolreport\KoolReport
             ->pipe($this->dataStore('workshops_aldana'));
 
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold where name like 'Christian%' group by isbn")
+            ->query("SELECT isbn, NAME, `type`,  SUM(dancers_qty) AS dancers, SUM(total) AS total FROM qry_products_sold where name like 'Christian%' group by isbn")
             ->pipe(new Sort(array(
                 "isbn"=>"desc",
                 'type' => "desc"
@@ -39,7 +38,7 @@ class WorkshopsSales extends \koolreport\KoolReport
 
 
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold where name like 'Miguel Angel%' group by isbn")
+            ->query("SELECT isbn, NAME, `type`,  SUM(dancers_qty) AS dancers, SUM(total) AS total FROM qry_products_sold where name like 'Miguel Angel%' group by isbn")
             ->pipe(new Sort(array(
                 "isbn"=>"asc",
                 'type' => "desc"
@@ -47,7 +46,7 @@ class WorkshopsSales extends \koolreport\KoolReport
             ->pipe($this->dataStore('workshops_zoto'));
 
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold where name like ' Stefania%' group by isbn")
+            ->query("SELECT isbn, NAME, `type`,  SUM(dancers_qty) AS dancers, SUM(total) AS total FROM qry_products_sold where name like ' Stefania%' group by isbn")
             ->pipe(new Sort(array(
                 "isbn"=>"asc",
                 'type' => "desc"
