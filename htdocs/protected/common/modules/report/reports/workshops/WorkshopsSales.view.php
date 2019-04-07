@@ -27,11 +27,11 @@ Table::create(array(
         "type"=>array(
             "label"=>"Type"
         ),
-        "tickets"=>array(
+        "qty"=>array(
             "type"=>"number",
-            "label"=>"Tickets",
+            "label"=>"Quantity",
         ),
-        "dancers_qry"=>array(
+        "dancers_qty"=>array(
             "type"=>"number",
             "label"=>"Dancers",
         ),
@@ -61,11 +61,11 @@ Table::create(array(
         "type"=>array(
             "label"=>"Type"
         ),
-        "tickets"=>array(
+        "qty"=>array(
             "type"=>"number",
-            "label"=>"Tickets",
+            "label"=>"Quantity",
         ),
-        "dancers_qry"=>array(
+        "dancers_qty"=>array(
             "type"=>"number",
             "label"=>"Dancers",
         ),
@@ -95,9 +95,9 @@ Table::create(array(
         "type"=>array(
             "label"=>"Type"
         ),
-        "tickets"=>array(
+        "qty"=>array(
             "type"=>"number",
-            "label"=>"Tickets",
+            "label"=>"Quantity",
         ),
         "dancers_qty"=>array(
             "type"=>"number",
@@ -129,9 +129,9 @@ Table::create(array(
         "type"=>array(
             "label"=>"Type"
         ),
-        "tickets"=>array(
+        "qty"=>array(
             "type"=>"number",
-            "label"=>"Tickets",
+            "label"=>"Quantity",
         ),
         "dancers_qty"=>array(
             "type"=>"number",

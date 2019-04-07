@@ -21,10 +21,6 @@ class Wtotis extends \koolreport\KoolReport
     {
         $this->src('tickets')
             ->query("SELECT * FROM qry_products_sold WHERE isbn LIKE 'w-totis%'")
-//            ->pipe(new Group(array(
-//                "by"=>"type",
-//                "sum"=>"dancers"
-//            )))
             ->pipe(new Sort(array(
                 "isbn"=>"desc",
                 'type' => "desc"
