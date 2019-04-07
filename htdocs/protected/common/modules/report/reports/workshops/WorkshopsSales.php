@@ -22,12 +22,10 @@ class WorkshopsSales extends \koolreport\KoolReport
     {
 
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold_count where name like 'Aldana%'")
-//            ->pipe(new Group(array(
-//                "by"=>"isbn"
-//            )))
+            ->query("SELECT * FROM qry_products_sold where name like 'Aldana%' group by isbn")
             ->pipe(new Sort(array(
-                "isbn"=>"asc"
+                "isbn"=>"asc",
+                'type' => "desc"
             )))
             ->pipe($this->dataStore('workshops_aldana'));
 
@@ -41,22 +39,18 @@ class WorkshopsSales extends \koolreport\KoolReport
 
 
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold_count where name like 'Miguel Angel%'")
-//            ->pipe(new Group(array(
-//                "by"=>"isbn"
-//            )))
+            ->query("SELECT * FROM qry_products_sold where name like 'Miguel Angel%' group by isbn")
             ->pipe(new Sort(array(
-                "isbn"=>"asc"
+                "isbn"=>"asc",
+                'type' => "desc"
             )))
             ->pipe($this->dataStore('workshops_zoto'));
 
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold_count where name like 'Stefania%'")
-//            ->pipe(new Group(array(
-//                "by"=>"isbn"
-//            )))
+            ->query("SELECT * FROM qry_products_sold where name like 'Stefania%' group by isbn")
             ->pipe(new Sort(array(
-                "isbn"=>"asc"
+                "isbn"=>"asc",
+                'type' => "desc"
             )))
             ->pipe($this->dataStore('workshops_stefania'));
 
