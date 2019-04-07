@@ -26,7 +26,8 @@ class Wad extends \koolreport\KoolReport
 //                "sum"=>"dancers"
 //            )))
             ->pipe(new Sort(array(
-                "isbn"=>"desc"
+                "isbn"=>"desc",
+                'type' => "desc"
             )))
             //->pipe(new Limit(array(10)))
             ->pipe($this->dataStore('wad'));
