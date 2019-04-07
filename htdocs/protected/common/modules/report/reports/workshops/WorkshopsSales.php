@@ -32,11 +32,7 @@ class WorkshopsSales extends \koolreport\KoolReport
             ->pipe($this->dataStore('workshops_aldana'));
 
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold where name like 'Christian%'")
-            ->pipe(new Group(array(
-                "by"=>"isbn",
-                "sum"=>"dancers_qty"
-            )))
+            ->query("SELECT * FROM qry_products_sold where name like 'Christian%' group by isbn")
             ->pipe(new Sort(array(
                 "isbn"=>"desc",
                 'type' => "desc"
