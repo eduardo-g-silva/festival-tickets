@@ -47,7 +47,7 @@ class WorkshopsSales extends \koolreport\KoolReport
             ->pipe($this->dataStore('workshops_zoto'));
 
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold where name like 'Stefania%' group by isbn")
+            ->query("SELECT * FROM qry_products_sold where name like ' Stefania%' group by isbn")
             ->pipe(new Sort(array(
                 "isbn"=>"asc",
                 'type' => "desc"
