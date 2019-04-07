@@ -39,7 +39,7 @@ $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
 
         <div class="add-to-cart">
         <?php
-                if($model['requiredOptionsCount'] == 0)
+                if($model['quantity'] > 0)
                 {
                 ?>
 
@@ -52,13 +52,9 @@ $addCompareLabel    = UsniAdaptor::t('products', 'Add to Compare');
                 }
                 else
                 {
-                    $url   = UsniAdaptor::createUrl('/catalog/products/site/detail', ['id' => $model['id']]);
                 ?>
-                    <button type="button">
-                        <a href="<?php echo $url;?>"><i class="fa fa-shopping-cart"></i></a>
-                        <a href="<?php echo $url;?>"><span><?php echo $addCartLabel;?></span></a>
-                    </button>
-                <?php    
+                    <h3>Sold out</h3>
+                <?php
                 }
                 ?>
         </div>
