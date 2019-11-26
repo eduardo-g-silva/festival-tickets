@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f54212477695e7022625a03068331478",
+    "content-hash": "4bef708717af0484bed03039ec4514cf",
     "packages": [
         {
             "name": "2amigos/yii2-date-picker-widget",
@@ -942,7 +942,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eduardo-g-silva/yiichimp",
-                "reference": "7930fa59ee7e557fc1e18b94dd26dd0958df85f0"
+                "reference": "e44a95f20f3b45e3bb47d7485c74b4c11bfa5a82"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -965,7 +965,7 @@
             "support": {
                 "issues": "https://github.com/eduardo-g-silva/yiichimp/issues"
             },
-            "time": "2019-11-24T18:15:24+00:00"
+            "time": "2019-11-26T20:12:36+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
