@@ -37,6 +37,10 @@ class CustomerSearchForm extends Model
      */
     public $type;
 
+    /**
+     * @var integer
+     */
+    public $progress;
 
     /**
      * @var string 
@@ -65,7 +69,7 @@ class CustomerSearchForm extends Model
     public function rules()
     {
         return [
-                    [['username', 'timezone', 'status', 'type', 'email', 'firstname', 'lastname', 'address1'], 'safe'],
+                    [['username', 'timezone', 'status', 'type', 'progress', 'email', 'firstname', 'lastname', 'address1'], 'safe'],
                ];
     }
 
@@ -92,7 +96,7 @@ class CustomerSearchForm extends Model
         $query->select("tc.*, person.email, person.firstname, person.lastname, address.address1")->from(["$customerTable tc"]);
         $query->innerJoin($personTable . ' person', 'tc.person_id = person.id');
         $query->leftJoin($addressTable . ' address', 'address.relatedmodel_id = person.id AND address.relatedmodel = :rm', [':rm' => 'Person']);
-        $attributes = ['username', 'timezone', 'status', 'type', 'email', 'firstname', 'lastname', 'address1'];
+        $attributes = ['username', 'timezone', 'status', 'progress', 'type', 'email', 'firstname', 'lastname', 'address1'];
         
         if($this->getLimit() != null)
         {
@@ -112,6 +116,7 @@ class CustomerSearchForm extends Model
         $query->andFilterWhere(['like', 'tc.username', $this->username]);
         $query->andFilterWhere(['tc.status' => $this->status]);
         $query->andFilterWhere(['tc.type' => $this->type]);
+        $query->andFilterWhere(['tc.progress' => $this->progress]);
         $query->andFilterWhere(['tc.timezone' => $this->timezone]);
         $query->andFilterWhere(['like', 'person.firstname', $this->firstname]);
         $query->andFilterWhere(['like', 'person.lastname', $this->lastname]);

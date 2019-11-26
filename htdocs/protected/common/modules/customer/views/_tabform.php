@@ -31,7 +31,7 @@ $form = TabbedActiveForm::begin([
                                ]); 
             $items[] = [
                 'options' => ['id' => 'tabuser'],
-                'label' => UsniAdaptor::t('application', 'Account'),
+                'label' => UsniAdaptor::t('application', 'Account Details'),
                 'class' => 'active',
                 'content' => $this->render('/_customeredit', ['form' => $form, 'formDTO' => $formDTO])
             ];

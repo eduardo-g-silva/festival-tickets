@@ -11,13 +11,15 @@ use yii\helpers\Html;
             <p>If you have any problem please send us a facebook message <a href="https://www.facebook.com/uktangofestival/">https://www.facebook.com/uktangofestival/</a> and we will contact you within a day.</p>
             <p>Alternatively you can email us to: <a href = "mailto: info@uktangofestival.com">info@uktangofestival.com</a></p>
             <br>
-            <div class="col-xs-12 col-lg-4 center">
-                <?= Html::a('Registration for the Festival', ['/customer/site/register'], ['class'=>'btn btn-primary']) ?>
+            <div class="row">
+                <div class="col-xs-12 col-lg-4 center">
+                    <?= Html::a('Social Dancer Registration for the Festival', ['/customer/site/register'], ['class'=>'btn btn-success']) ?>
+                </div>
+                <div class="col-xs-12 col-lg-4 center">
+                    <?= Html::a('Register to participate in Championship', ['/customer/site/championship'], ['class'=>'btn btn-success']) ?>
+                </div>
             </div>
-            <div class="col-xs-12 col-lg-4 center">
-            <?= Html::a('Register to participate in Championship', ['/customer/site/championship'], ['class'=>'btn btn-primary']) ?>
-            </div>
+            <br>
         </div>
     </div>
-
 </div>

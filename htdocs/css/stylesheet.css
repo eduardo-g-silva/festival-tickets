@@ -899,6 +899,10 @@ span.notice {
 	cursor: pointer;
 }
 
+i.fa.fa-eye, i.fa.fa-pencil, i.fa.fa-trash-o, i.fa.fa-lock, i.fa.fa-close  {
+	font-size: 1.5em;
+}
+
 
 
 

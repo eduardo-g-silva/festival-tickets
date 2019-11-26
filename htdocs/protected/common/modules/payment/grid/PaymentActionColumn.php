@@ -33,6 +33,9 @@ class PaymentActionColumn extends \common\modules\extension\grid\ExtensionAction
     {
         if($this->checkAccess($model, 'update'))
         {
+            $label = '';
+            $icon  = '';
+            $url   = '';
             if($model['status'] == Extension::STATUS_ACTIVE && $model['allowToDeactivate'])
             {
                 $label = UsniAdaptor::t('users', 'Deactivate');

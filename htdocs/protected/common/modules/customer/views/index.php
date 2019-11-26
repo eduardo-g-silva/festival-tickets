@@ -14,6 +14,8 @@ use usni\library\grid\StatusDataColumn;
 use customer\grid\CustomerActionColumn;
 use customer\models\Customer;
 use usni\library\grid\CustomerTypeDataColumn;
+use usni\library\grid\CustomerProgressDataColumn;
+use usni\library\utils\CustomerProgressUtil;
 
 /* @var $gridViewDTO \usni\library\modules\users\dto\UserGridViewDTO */
 /* @var $this \usni\library\web\AdminView */
@@ -63,12 +65,17 @@ $widgetParams  = [
                                             'label'     => UsniAdaptor::t('users', 'Last Name'),
                                             'attribute' => 'lastname',
                                         ],
-                                        [
-                                            'attribute' => 'timezone',
-                                            'filter'    => TimezoneUtil::getTimezoneSelectOptions()
-                                        ],
+//                                        [
+//                                            'attribute' => 'timezone',
+//                                            'filter'    => TimezoneUtil::getTimezoneSelectOptions()
+//                                        ],
                                         [
                                             'attribute' => 'address1'
+                                        ],
+                                        [
+                                            'attribute' => 'progress',
+                                            'class'     => CustomerProgressDataColumn::className(),
+                                            'filter'    => CustomerProgressUtil::getProgressDropdown()
                                         ],
                                         [
                                             'attribute' => 'status',

@@ -26,7 +26,7 @@ $form = TabbedActiveForm::begin([
 <?php
             $items[] = [
                 'options' => ['id' => 'tabuser'],
-                'label' => UsniAdaptor::t('application', 'Account'),
+                'label' => UsniAdaptor::t('application', 'Account Details'),
                 'class' => 'active',
                 'content' => $this->render('/front/_customeredit', ['form' => $form, 'formDTO' => $formDTO])
             ];

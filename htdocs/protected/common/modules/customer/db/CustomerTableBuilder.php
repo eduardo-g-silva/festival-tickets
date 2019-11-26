@@ -27,6 +27,7 @@ class CustomerTableBuilder extends TableBuilder
             'auth_key' => $this->string(128),
             'status' => $this->smallInteger(6),
             'type' => $this->smallInteger(6),
+            'progress' => $this->smallInteger(6),
             'person_id' => $this->integer(11),
             'login_ip' => $this->string(20),
             'last_login' => $this->dateTime(),

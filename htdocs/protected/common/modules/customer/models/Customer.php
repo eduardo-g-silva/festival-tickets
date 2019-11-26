@@ -15,6 +15,7 @@ use usni\library\utils\ArrayUtil;
 use common\modules\order\models\Order;
 use usni\library\db\ActiveRecord;
 use usni\library\modules\auth\web\IAuthIdentity;
+use usni\library\utils\CustomerProgressUtil;
 /**
  * Customer is the base class for table tbl_customer.
  *
@@ -88,7 +89,8 @@ class Customer extends ActiveRecord implements IAuthIdentity
                             ['timezone',                        'required', 'except' => ['registration', 'default', 'bulkedit']],
                             ['confirmPassword',                 'required', 'on' => ['create', 'registration']],
                             ['status',                          'default', 'value' => User::STATUS_PENDING],
-                            ['type',                            'default', 'value' => CustomerTypeUtil::CUSTOMER_TYPE_WORKSHOP],
+                            ['progress',                        'default', 'value' => CustomerProgressUtil::CUSTOMER_PROGRESS_WAITING],
+                            ['type',                            'safe'],
                             ['groups',                          'safe'],
                             [['confirmPassword'], 'compare', 'compareAttribute' => 'password', 'on' => ['create', 'registration']],
                             ['unique_id', 'safe'],
@@ -110,10 +112,10 @@ class Customer extends ActiveRecord implements IAuthIdentity
         else
         {
             $scenarios                  = parent::scenarios();
-            $commonAttributes           = ['username','timezone', 'status', 'groups', 'type'];
+            $commonAttributes           = ['username','timezone', 'status', 'progress', 'groups', 'type'];
             $scenarios['create']        = $scenarios['registration'] = ArrayUtil::merge($commonAttributes, ['password', 'confirmPassword']);
             $scenarios['update']        = $scenarios['editprofile']  = $commonAttributes;
-            $scenarios['bulkedit']      = ['timezone', 'status', 'groups'];
+            $scenarios['bulkedit']      = ['timezone', 'status', 'progress', 'groups'];
             return $scenarios;
         }
     }
