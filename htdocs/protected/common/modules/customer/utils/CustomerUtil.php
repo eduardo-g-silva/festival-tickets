@@ -38,7 +38,7 @@ class CustomerUtil
     {
         if ($email == null)
         {
-            return $username . '@whatacart.com';
+            return $username . '@open-ecommerce.org';
         }
         else
         {

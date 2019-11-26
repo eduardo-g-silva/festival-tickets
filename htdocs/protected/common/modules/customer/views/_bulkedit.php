@@ -26,6 +26,7 @@ $form = BulkEditActiveForm::begin([
         ]);
 ?>
 <?= $form->field($customerModel, 'status')->select2Input(UserUtil::getStatusDropdown(), false);?>
+<?= $form->field($customerModel, 'type')->select2Input(UserUtil::getCustomerTypeDropdown(), false);?>
 <?= $form->field($customerModel, 'timezone')->select2Input(TimezoneUtil::getTimezoneSelectOptions());?>
 <?= $form->field($customerModel, 'groups')->select2input($groupList, true, ['multiple'=>'multiple']);?>
 <?= $form->field($addressModel, 'city')->textInput();?>

@@ -26,7 +26,7 @@ class CustomerDAO extends \yii\base\Component
         $addressTblName = UsniAdaptor::tablePrefix() . 'address';
         $custTblName    = UsniAdaptor::tablePrefix() . 'customer';
         $sql            = "SELECT * FROM $addressTblName addr, $custTblName cust  WHERE cust.id = :cid "
-                            . "AND cust.person_id = addr.relatedmodel_id AND addr.relatedmodel = :rm AND type = :type";
+                            . "AND cust.person_id = addr.relatedmodel_id AND addr.relatedmodel = :rm AND addr.type = :type";
         $dependency     = new DbDependency(['sql' => "SELECT MAX(modified_datetime) FROM $custTblName"]);
         return UsniAdaptor::app()->db->createCommand($sql, [':rm' => 'Person', ':cid' => $customerId, ':type' => $type])->cache(0, $dependency)->queryOne();
     }

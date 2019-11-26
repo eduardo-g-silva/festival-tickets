@@ -31,13 +31,13 @@ $form = TabbedActiveForm::begin([
                                ]); 
             $items[] = [
                 'options' => ['id' => 'tabuser'],
-                'label' => UsniAdaptor::t('application', 'General'),
+                'label' => UsniAdaptor::t('application', 'Account'),
                 'class' => 'active',
                 'content' => $this->render('/_customeredit', ['form' => $form, 'formDTO' => $formDTO])
             ];
             $items[] = [
                 'options' => ['id' => 'tabperson'],
-                'label' => UsniAdaptor::t('users', 'Person'),
+                'label' => UsniAdaptor::t('users', 'Dancers Details'),
                 'content' => $this->render('@usni/library/modules/users/views/_personedit', 
                                             ['form' => $form, 'formDTO' => $formDTO, 'deleteUrl' => UsniAdaptor::createUrl('customer/default/delete-image')])
             ];

@@ -9,6 +9,12 @@
         "issues": "https://github.com/ushainformatique/whatacart/issues"
     },
     "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/eduardo-g-silva/yiichimp"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "2.0.13",
@@ -23,10 +29,11 @@
 		"kartik-v/bootstrap-star-rating": "@dev",
         "marqu3s/yii2-summernote": "dev-master",
         "fortawesome/font-awesome": "*",
-        "ushainformatique/yiichimp": "*",
+        "eduardo-g-silva/yiichimp": "dev-master",
         "yidas/yii2-bower-asset": "^2.0",
         "alkurn/yii2-stripe": "dev-master",
-        "koolphp/koolreport": "^3.25"
+        "koolphp/koolreport": "^3.25",
+        "kartik-v/yii2-widgets": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",

@@ -5,8 +5,10 @@
  */
 namespace customer\models;
 
+use usni\library\utils\CustomerTypeUtil;
 use usni\UsniAdaptor;
 use usni\library\modules\users\models\User;
+
 use customer\models\CustomerMetadata;
 use usni\library\modules\users\models\Address;
 use usni\library\utils\ArrayUtil;
@@ -29,7 +31,7 @@ class Customer extends ActiveRecord implements IAuthIdentity
      * Misc constants.
      */
     const STATUS_PENDING    = 2;
-    
+
     /**
      * Notification constants
      */
@@ -86,6 +88,7 @@ class Customer extends ActiveRecord implements IAuthIdentity
                             ['timezone',                        'required', 'except' => ['registration', 'default', 'bulkedit']],
                             ['confirmPassword',                 'required', 'on' => ['create', 'registration']],
                             ['status',                          'default', 'value' => User::STATUS_PENDING],
+                            ['type',                            'default', 'value' => CustomerTypeUtil::CUSTOMER_TYPE_WORKSHOP],
                             ['groups',                          'safe'],
                             [['confirmPassword'], 'compare', 'compareAttribute' => 'password', 'on' => ['create', 'registration']],
                             ['unique_id', 'safe'],
@@ -107,7 +110,7 @@ class Customer extends ActiveRecord implements IAuthIdentity
         else
         {
             $scenarios                  = parent::scenarios();
-            $commonAttributes           = ['username','timezone', 'status', 'groups'];
+            $commonAttributes           = ['username','timezone', 'status', 'groups', 'type'];
             $scenarios['create']        = $scenarios['registration'] = ArrayUtil::merge($commonAttributes, ['password', 'confirmPassword']);
             $scenarios['update']        = $scenarios['editprofile']  = $commonAttributes;
             $scenarios['bulkedit']      = ['timezone', 'status', 'groups'];

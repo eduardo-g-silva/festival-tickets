@@ -55,7 +55,9 @@ else
     }
         $this->beginBody();
         echo $this->renderHeader();
-        echo $this->renderNavBar();
+        if (!Yii::$app->user->getIsGuest()) {
+            echo $this->renderNavBar();
+        }
         echo $this->renderBreadcrumb();
         if ($numberOfColumns == 3 || $numberOfColumns == 2)
         {

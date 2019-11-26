@@ -25,7 +25,8 @@ class CustomerTableBuilder extends TableBuilder
             'password_reset_token' => $this->string(128),
             'password_hash' => $this->string(128),
             'auth_key' => $this->string(128),
-            'status' => $this->smallInteger(),
+            'status' => $this->smallInteger(6),
+            'type' => $this->smallInteger(6),
             'person_id' => $this->integer(11),
             'login_ip' => $this->string(20),
             'last_login' => $this->dateTime(),
@@ -40,6 +41,7 @@ class CustomerTableBuilder extends TableBuilder
     {
         return[
                 ['idx_status', 'status', false],
+                ['idx_type', 'type', false],
                 ['idx_username', 'username', true]
             ];
     }

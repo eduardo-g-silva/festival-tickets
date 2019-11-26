@@ -79,4 +79,5 @@ class ReviewUtil
                     ProductReview::STATUS_DELETED     => UsniAdaptor::t('application', 'Delete'),
                ];
     }
+
 }

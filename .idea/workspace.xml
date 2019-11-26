@@ -1,31 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/htdocs/backend/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/backend/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/backend/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/backend/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/backend/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/backend/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/getfb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabformchampionship.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/registrationchampionship.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/festival-tickets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/festival-tickets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/installer/Extension+Installer+Help+Guide.doc" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/installer/Extension+Installer+Help+Guide.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/installer/business/UploadManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/installer/business/UploadManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/installer/config/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/installer/config/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/installer/controllers/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/installer/controllers/UploadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/installer/models/UploadForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/installer/models/UploadForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/installer/views/_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/installer/views/_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/installer/views/summary.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/installer/views/summary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/installer/views/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/installer/views/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/installer/xyz.zip" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/installer/xyz.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFiles/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFiles/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFiles/protected/common/modules/payment/dto/StripeFormDTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFiles/protected/common/modules/payment/dto/StripeFormDTO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/business/stripe/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/business/stripe/Manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/business/stripe/PaymentProcessor.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/business/stripe/PaymentProcessor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/config/stripe/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/config/stripe/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/controllers/stripe/ConfirmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/controllers/stripe/ConfirmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/controllers/stripe/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/controllers/stripe/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/controllers/stripe/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/controllers/stripe/SettingsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/controllers/stripe/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/controllers/stripe/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/db/stripe/StripeTransactionTableBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/db/stripe/StripeTransactionTableBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/models/stripe/StripeSetting.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/models/stripe/StripeSetting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/models/stripe/StripeTransaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/models/stripe/StripeTransaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/views/stripe/confirmorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/views/stripe/confirmorder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/views/stripe/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/copyFolders/protected/common/modules/payment/views/stripe/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/install.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/StripePackage/stripeInstaller/install.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/yiichimp/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/yiichimp/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/index-test.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/index-test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/index-test.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/index-test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/cart/models/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/cart/models/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/cart/models/ItemCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/cart/models/ItemCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/catalog/modules/products/utils/ReviewUtil.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/catalog/modules/products/utils/ReviewUtil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/dao/CustomerDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/dao/CustomerDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/db/CustomerTableBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/db/CustomerTableBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/Customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/CustomerSearchForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/CustomerSearchForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/utils/CustomerUtil.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/utils/CustomerUtil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/_bulkedit.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/_bulkedit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/_customeredit.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/_customeredit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/_tabform.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/_tabform.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabform.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabform.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/Report.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/Report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/controllers/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/controllers/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/views/default/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/views/default/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/frontend/modules/site/views/_homeinfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/frontend/modules/site/views/_homeinfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/frontend/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/frontend/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/wk.html" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/wk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/workshops.html" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/workshops.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/yii" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/yii" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/htdocs/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/htdocs/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-imagine" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yidas/yii2-bower-asset" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/fortawesome/font-awesome" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-taggable-behavior" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-date-picker-widget" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-selectize-widget" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/2amigos/yii2-date-time-picker-widget" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/composer" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/typeahead.js" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/jquery.payment" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/sifter" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/yii2-pjax" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/branchonline/yii2-lightbox" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/microplugin" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/selectize" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/lightbox2" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/smalot-bootstrap-datetimepicker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/bootstrap-datepicker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/summernote" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/bootstrap" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/jquery" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/punycode" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/codemirror" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/bower/inputmask" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/linslin/yii2-curl" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/bootstrap-star-rating" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-rating" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-krajee-base" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/marqu3s/yii2-summernote" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/league/oauth2-client" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/alkurn/yii2-stripe" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/koolphp/koolreport" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-activeform" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-spinner" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-sidenav" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-datetimepicker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-switchinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-select2" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-rangeinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-alert" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widgets" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/bootstrap-fileinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-fileinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-datepicker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-depdrop" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/dependent-dropdown" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-colorinput" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-touchspin" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-timepicker" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-typeahead" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-affix" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-growl" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/select2/select2" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1U3hPGsVX7UXpLLthmGxBY9RqK3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/widgets" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/widgets" />
+      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/grid" />
+      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/utils" />
+      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/views" />
+      <recent name="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/extensions/yiichimp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="" />
       <created>1540909091654</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540909091654</updated>
+      <workItem from="1573849593453" duration="6220000" />
+      <workItem from="1574591166945" duration="55803000" />
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

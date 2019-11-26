@@ -49,6 +49,11 @@ class SiteController extends BaseController
                         'allow' => true,
                         'roles' => ['@'],
                     ],
+                    [
+                        'allow' => true,
+                        'actions' => ['championship'],
+                        'roles' => ['?'],
+                    ],
                     // everything else is denied by default
                 ],
             ],
@@ -118,7 +123,40 @@ class SiteController extends BaseController
         }
         return $this->render('/front/forgotpassword', ['formDTO' => $formDTO]);
     }
-    
+
+    /**
+     * Action championship.
+     * @return void
+     */
+    public function actionChampionship()
+    {
+        if(UsniAdaptor::app()->user->isGuest)
+        {
+            $formDTO = new FormDTO();
+            $formDTO->setScenario('registration');
+            $postData = UsniAdaptor::app()->request->post();
+            $formDTO->setPostData($postData);
+            $manager = new SiteManager();
+            $manager->processEdit($formDTO);
+            if($formDTO->getIsTransactionSuccess() == true)
+            {
+                FlashUtil::setMessage('success', UsniAdaptor::t('userflash', 'You have successfully registered with the system. An activation email has been sent at your registered email address.'));
+                return $this->redirect(UsniAdaptor::createUrl('customer/site/login'));
+            }
+            else
+            {
+                return $this->render('/front/registrationchampionship', ['formDTO' => $formDTO]);
+            }
+        }
+        else
+        {
+            $customer = UsniAdaptor::app()->user->getIdentity();
+            $this->redirect(UsniAdaptor::createUrl('/customer/site/edit-profile', ['id' => $customer->id]));
+        }
+    }
+
+
+
     /**
      * Action register.
      * @return void

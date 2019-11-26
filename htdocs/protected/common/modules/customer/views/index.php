@@ -13,6 +13,7 @@ use usni\library\modules\users\widgets\ActionToolbar;
 use usni\library\grid\StatusDataColumn;
 use customer\grid\CustomerActionColumn;
 use customer\models\Customer;
+use usni\library\grid\CustomerTypeDataColumn;
 
 /* @var $gridViewDTO \usni\library\modules\users\dto\UserGridViewDTO */
 /* @var $this \usni\library\web\AdminView */
@@ -48,6 +49,11 @@ $widgetParams  = [
                                         [
                                             'label'     => UsniAdaptor::t('users', 'Email'),
                                             'attribute' => 'email'
+                                        ],
+                                        [
+                                            'attribute' => 'type',
+                                            'class'     => CustomerTypeDataColumn::className(),
+                                            'filter'    => UserUtil::getCustomerTypeDropdown()
                                         ],
                                         [
                                             'label'     => UsniAdaptor::t('users', 'First Name'),

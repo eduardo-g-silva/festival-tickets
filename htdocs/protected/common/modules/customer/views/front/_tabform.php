@@ -8,7 +8,7 @@ use usni\library\utils\ArrayUtil;
 
 if($formDTO->getScenario() == 'registration')
 {
-    $caption = UsniAdaptor::t('customer', 'Register Account');
+    $caption = UsniAdaptor::t('customer', 'Register Social Dancer Account for Festival');
 }
 else
 {
@@ -26,14 +26,14 @@ $form = TabbedActiveForm::begin([
 <?php
             $items[] = [
                 'options' => ['id' => 'tabuser'],
-                'label' => UsniAdaptor::t('application', 'General'),
+                'label' => UsniAdaptor::t('application', 'Account'),
                 'class' => 'active',
                 'content' => $this->render('/front/_customeredit', ['form' => $form, 'formDTO' => $formDTO])
             ];
             $deleteUrl = UsniAdaptor::createUrl('customer/site/delete-image');
             $items[] = [
                 'options' => ['id' => 'tabperson'],
-                'label' => UsniAdaptor::t('users', 'Person'),
+                'label' => UsniAdaptor::t('users', 'Dancer Details'),
                 'content' => $this->render('@usni/library/modules/users/views/_personedit.php', ['form' => $form, 'formDTO' => $formDTO, 
                                                                                                  'showDeleteLink' => false, 'deleteUrl' => $deleteUrl])
             ];

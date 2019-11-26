@@ -6,11 +6,11 @@ use frontend\widgets\CurrencySelector;
 
 /* @var $this \frontend\web\View */
 ?>
-<!--<nav id="top">-->
-<!--    <div class="container">-->
-<!--        <div class="hidden-xs hidden-sm hidden-md pull-left" id="local-options">-->
-<!--            <ul class="list-inline">-->
-<!--                --><?php
+<nav id="top">
+    <div class="container">
+        <div class="hidden-xs hidden-sm hidden-md pull-left" id="local-options">
+            <ul class="list-inline">
+                <?php
 //                echo LanguageSelector::widget([
 //                                                'selectedLanguage' => UsniAdaptor::app()->languageManager->selectedLanguage,
 //                                                'translatedLanguages' => UsniAdaptor::app()->languageManager->translatedLanguages,
@@ -19,27 +19,27 @@ use frontend\widgets\CurrencySelector;
 //                                                'headerLinkOptions' => ['data-toggle' => 'dropdown', 'class' => 'dropdown-toggle'],
 //                                                'view'             => $this
 //                                               ]);
-//                echo StoreSelector::widget([
-//                                                        'selectedStore' => UsniAdaptor::app()->storeManager->selectedStore,
-//                                                        'stores'        => UsniAdaptor::app()->storeManager->getAllowed(),
-//                                                        'headerLinkOptions' => ['data-toggle' => 'dropdown', 'class' => 'dropdown-toggle'],
-//                                                        'actionUrl'        => '/customer/site/set-store',
-//                                                        'view'             => $this
-//                                                    ]);
-//                echo CurrencySelector::widget([
-//                                                        'selectedCurrency' => UsniAdaptor::app()->currencyManager->selectedCurrency,
-//                                                        'currencies'       => UsniAdaptor::app()->currencyManager->currencyCodes,
-//                                                        'actionUrl'        => '/customer/site/set-currency',
-//                                                        'view'             => $this
-//                                                    ]);
-//                ?>
-<!--            </ul>-->
-<!--        </div>-->
-<!--        --><?php
-//        // echo $this->render("//common/_topnav");
-//        ?>
-<!--    </div>-->
-<!--</nav>-->
+                echo StoreSelector::widget([
+                                                        'selectedStore' => UsniAdaptor::app()->storeManager->selectedStore,
+                                                        'stores'        => UsniAdaptor::app()->storeManager->getAllowed(),
+                                                        'headerLinkOptions' => ['data-toggle' => 'dropdown', 'class' => 'dropdown-toggle'],
+                                                        'actionUrl'        => '/customer/site/set-store',
+                                                        'view'             => $this
+                                                    ]);
+                echo CurrencySelector::widget([
+                                                        'selectedCurrency' => UsniAdaptor::app()->currencyManager->selectedCurrency,
+                                                        'currencies'       => UsniAdaptor::app()->currencyManager->currencyCodes,
+                                                        'actionUrl'        => '/customer/site/set-currency',
+                                                        'view'             => $this
+                                                    ]);
+                ?>
+            </ul>
+        </div>
+        <?php
+         echo $this->render("//common/_topnav");
+        ?>
+    </div>
+</nav>
 <header>
     <div class="container header-row">
         <div class="row">
@@ -50,7 +50,10 @@ use frontend\widgets\CurrencySelector;
             </div>
             <?php //echo $this->render("//common/_navSearch");?>
             <div class="col-sm-4">
-                <?php echo $this->render("//cart/_minicart");?>
+                <?php
+                    if (!Yii::$app->user->getIsGuest()) {
+                        echo $this->render("//cart/_minicart");                    }
+                ?>
             </div>
         </div>
     </div>
