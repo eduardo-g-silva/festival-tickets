@@ -29,7 +29,7 @@
 		"kartik-v/bootstrap-star-rating": "@dev",
         "marqu3s/yii2-summernote": "dev-master",
         "fortawesome/font-awesome": "*",
-        "eduardo-g-silva/yiichimp": "dev-master",
+        "eduardo-g-silva/yiichimp": "dev-master@dev",
         "yidas/yii2-bower-asset": "^2.0",
         "alkurn/yii2-stripe": "dev-master",
         "koolphp/koolreport": "^3.25",
