@@ -1,15 +1,28 @@
 <?php
 namespace common\modules\payment\controllers\stripe;
 
-use common\modules\payment\business\stripe\Manager;
 use usni\UsniAdaptor;
+use common\modules\payment\business\stripe\Manager;
+use common\utils\ApplicationUtil;
+use usni\library\utils\FlashUtil;
 /**
- * ConfirmController class file
+ * SiteController class file
  *
- * @package common\modules\payment\controllers\stripe
+ * @package 
  */
-class ConfirmController extends \usni\library\web\Controller
+class SiteController extends \usni\library\web\Controller
 {
+    public $manager;
+    
+    /**
+     * @inheritdoc
+     */
+    public function init()
+    {
+        parent::init();
+        $this->enableCsrfValidation = false;    
+    }
+    
     /**
      * @inheritdoc
      */
@@ -38,20 +51,27 @@ class ConfirmController extends \usni\library\web\Controller
                         'categories' => ['stripe'],
                     ]);
             UsniAdaptor::app()->log->targets = $targets;
+            $this->manager = Manager::getInstance();
             return true;
         }
         return false;
     }
     
     /**
-     * Index action for confirm
+     * Send action for the controller.
+     * 
      * @return string
      */
-    public function actionIndex()
+    public function actionCharge() 
     {
-        $manager            = Manager::getInstance();
-        $config                 = $manager->getStripeConfig();
-        $intent                 = $manager->createPaymentIntent();
-        return $this->renderPartial('/stripe/confirmorder', ['config' => $config, 'secret' => $intent['client_secret'], 'intentId' => $intent['id']]);
+        $returnStatus = $this->manager->processCharge($_POST);
+        if($returnStatus == 'success')
+        {
+            $checkout       = ApplicationUtil::getCheckout();
+            $order          = $checkout->order;
+            return $this->redirect(UsniAdaptor::createUrl('cart/checkout/complete-order', ['orderId' => $order['id']]));
+        }
+        FlashUtil::setMessage('error', $returnStatus); 
+        return $this->redirect(UsniAdaptor::createUrl('cart/checkout/review-order'));
     }
 }

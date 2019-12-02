@@ -1,41 +1,46 @@
 <?php
 use usni\UsniAdaptor;
-use frontend\widgets\TabbedActiveForm;
-use frontend\widgets\FormButtons;
+use usni\library\bootstrap\TabbedActiveForm;
+use usni\library\bootstrap\FormButtons;
 use usni\library\widgets\Tabs;
 use usni\library\widgets\TabbedActiveFormAlert;
 use usni\library\utils\ArrayUtil;
 
-if($formDTO->getScenario() == 'registration')
+/* @var $formDTO \customer\dto\FormDTO */
+/* @var $form \usni\library\bootstrap\TabbedActiveForm */
+/* @var $this \usni\library\web\AdminView */
+
+?>
+<?php
+
+if($formDTO->getScenario() == 'create')
 {
-    $caption = UsniAdaptor::t('customer', 'Register Account to Compete in Championship 2020');
+    $caption = UsniAdaptor::t('application', 'Create') . ' ' . UsniAdaptor::t('customer', 'Customer');
 }
 else
 {
-    $caption = UsniAdaptor::t('customer', 'Edit Competitor Profile');
+    $caption = UsniAdaptor::t('application', 'Update') . ' ' . UsniAdaptor::t('customer', 'Customer');
 }
 $errors = ArrayUtil::merge($formDTO->getModel()->errors, $formDTO->getPerson()->errors, $formDTO->getAddress()->errors);
 echo TabbedActiveFormAlert::widget(['model' => $formDTO->getModel(), 'errors' => $errors]);
 $form = TabbedActiveForm::begin([
-                                    'id'          => 'customerprofileeditview', 
+                                    'id'          => 'customereditview', 
                                     'layout'      => 'horizontal',
                                     'options'     => ['enctype' => 'multipart/form-data'],
                                     'caption'     => $caption
                                ]); 
-?>
-<?php
             $items[] = [
                 'options' => ['id' => 'tabuser'],
-                'label' => UsniAdaptor::t('application', 'Account'),
+                'label' => UsniAdaptor::t('application', 'Account Details'),
                 'class' => 'active',
-                'content' => $this->render('/front/_customeredit', ['form' => $form, 'formDTO' => $formDTO])
+                'content' => $this->render('/_customeredit', ['form' => $form, 'formDTO' => $formDTO])
             ];
             $deleteUrl = UsniAdaptor::createUrl('customer/site/delete-image');
             $items[] = [
                 'options' => ['id' => 'tableader'],
                 'label' => UsniAdaptor::t('users', 'Details for Leader'),
                 'content' => $this->render('@usni/library/modules/users/views/_personeditleader.php', ['form' => $form, 'formDTO' => $formDTO,
-                                                                                                 'showDeleteLink' => false, 'deleteUrl' => $deleteUrl])
+                    'showDeleteLink' => false, 'deleteUrl' => $deleteUrl])
             ];
             $items[] = [
                 'options' => ['id' => 'tabfollower'],
@@ -50,7 +55,5 @@ $form = TabbedActiveForm::begin([
             ];
             echo Tabs::widget(['items' => $items]);
     ?>
-    <?= FormButtons::widget(
-    ['submitButtonLabel' => UsniAdaptor::t('application', 'Continue'), 'showCancelButton' => true, 'cancelUrl' => UsniAdaptor::createUrl('site/default/index')]
-);?>
+<?= FormButtons::widget(['cancelUrl' => UsniAdaptor::createUrl('customer/default/index')]);?>
 <?php TabbedActiveForm::end();

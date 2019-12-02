@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/festival-tickets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/festival-tickets.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/magicento.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/magicento.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/_tabformchampionship.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extensions/yiichimp" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/yiichimp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabform.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabform.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabformchampionship.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabformchampionship.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/business/stripe/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/business/stripe/Manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/controllers/stripe/ConfirmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/controllers/stripe/ConfirmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/views/stripe/confirmorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/views/stripe/confirmorder.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,35 +104,40 @@
   </component>
   <component name="ProjectId" id="1U3hPGsVX7UXpLLthmGxBY9RqK3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/htdocs/backend/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/views" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/views" />
+      <recent name="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views" />
+      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/utils" />
+      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/models" />
+      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/models/Base" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/extensions/yiichimp" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/htdocs/backend/css" />
-      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/widgets" />
-      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/grid" />
-      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/utils" />
-      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/views" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -147,7 +154,8 @@
       <workItem from="1573849593453" duration="6220000" />
       <workItem from="1574591166945" duration="55803000" />
       <workItem from="1574739372569" duration="2492000" />
-      <workItem from="1574762132493" duration="16726000" />
+      <workItem from="1574762132493" duration="17474000" />
+      <workItem from="1575279581054" duration="20598000" />
     </task>
     <servers />
   </component>
@@ -166,5 +174,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="566" y="27" width="586" height="1023" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575294658070">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="566" y="27" width="586" height="1023" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1575294658070" />
+    <state x="656" y="295" width="424" height="484" key="FileChooserDialogImpl" timestamp="1575292475016">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="656" y="295" width="424" height="484" key="FileChooserDialogImpl/67.27.1613.1023@67.27.1613.1023" timestamp="1575292475016" />
+    <state x="225" y="140" width="1367" height="770" key="find.popup" timestamp="1575301986291">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="225" y="140" width="1367" height="770" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1575301986291" />
   </component>
 </project>

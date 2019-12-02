@@ -5,6 +5,7 @@ use frontend\widgets\FormButtons;
 use usni\library\widgets\Tabs;
 use usni\library\widgets\TabbedActiveFormAlert;
 use usni\library\utils\ArrayUtil;
+use yii\helpers\Html;
 
 if($formDTO->getScenario() == 'registration')
 {
@@ -44,5 +45,8 @@ $form = TabbedActiveForm::begin([
             ];
             echo Tabs::widget(['items' => $items]);
     ?>
-<?= FormButtons::widget(['submitButtonLabel' => UsniAdaptor::t('application', 'Continue'), 'showCancelButton' => false]);?>
+<?= FormButtons::widget(
+    ['submitButtonLabel' => UsniAdaptor::t('application', 'Continue'), 'showCancelButton' => true, 'cancelUrl' => UsniAdaptor::createUrl('site/default/index')]
+);?>
+
 <?php TabbedActiveForm::end();

@@ -10,6 +10,7 @@
 
 use usni\UsniAdaptor;
 use usni\library\modules\users\widgets\BrowseDropdown;
+use usni\library\utils\CustomerTypeUtil;
 
 $customer = $formDTO->getModel();
 $this->params['breadcrumbs'] = [
@@ -27,4 +28,11 @@ $browseParams   = ['permission' => 'customer.updateother',
                    'textAttribute' => 'username'];
 echo BrowseDropdown::widget($browseParams);
 $this->title = UsniAdaptor::t('application', 'Update') . ' ' . UsniAdaptor::t('customer', 'Customer');
-echo $this->render('/_tabform', ['formDTO' => $formDTO]);
+
+if ($customer['type'] == CustomerTypeUtil::CUSTOMER_TYPE_COMPETITOR) {
+    echo $this->render('/_tabformchampionship', ['formDTO' => $formDTO]);
+}else{
+    echo $this->render('/_tabform', ['formDTO' => $formDTO]);
+}
+
+
