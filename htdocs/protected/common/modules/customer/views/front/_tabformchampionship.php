@@ -56,7 +56,7 @@ $form = TabbedActiveForm::begin([
             ];
             echo Tabs::widget(['items' => $items]);
     ?>
-    <div class="row"><h4 style="float: right;color: #f00;"><strong>Please complete the 3 tabs above and submit the form.</strong></h4></div>
+    <div class="row"><h4 style="float: right;color: #f00;"><strong>Please complete the 4 tabs above and submit the form.</strong></h4></div>
     <?= FormButtons::widget(
     ['submitButtonLabel' => UsniAdaptor::t('application', 'Submit the form'), 'showCancelButton' => true, 'cancelUrl' => UsniAdaptor::createUrl('site/default/index')]
 );?>
