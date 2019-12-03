@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/_tabformchampionship.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/messages/es/userhint.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/messages/es/userhint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/Customer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabform.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabform.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabformchampionship.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabformchampionship.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/business/stripe/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/business/stripe/Manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/controllers/stripe/ConfirmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/controllers/stripe/ConfirmController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/views/stripe/confirmorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/payment/views/stripe/confirmorder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +152,8 @@
       <workItem from="1574591166945" duration="55803000" />
       <workItem from="1574739372569" duration="2492000" />
       <workItem from="1574762132493" duration="17474000" />
-      <workItem from="1575279581054" duration="20598000" />
+      <workItem from="1575279581054" duration="21391000" />
+      <workItem from="1575386854454" duration="3348000" />
     </task>
     <servers />
   </component>
@@ -184,9 +182,9 @@
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="656" y="295" width="424" height="484" key="FileChooserDialogImpl/67.27.1613.1023@67.27.1613.1023" timestamp="1575292475016" />
-    <state x="225" y="140" width="1367" height="770" key="find.popup" timestamp="1575301986291">
+    <state x="67" y="27" width="1599" height="770" key="find.popup" timestamp="1575392313329">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state x="225" y="140" width="1367" height="770" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1575301986291" />
+    <state x="67" y="27" width="1599" height="770" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1575392313329" />
   </component>
 </project>

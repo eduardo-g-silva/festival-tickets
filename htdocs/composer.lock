@@ -942,7 +942,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eduardo-g-silva/yiichimp",
-                "reference": "f2fb6a1c34ef673e61351f2b291cda0ac14f64d8"
+                "reference": "612ffd325875ac1ef54a08f021b81978e3c1f1f0"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -965,7 +965,7 @@
             "support": {
                 "issues": "https://github.com/eduardo-g-silva/yiichimp/issues"
             },
-            "time": "2019-12-02T17:14:28+00:00"
+            "time": "2019-12-03T17:01:36+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",

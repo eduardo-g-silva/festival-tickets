@@ -84,7 +84,8 @@ class Customer extends ActiveRecord implements IAuthIdentity
                             ['username', 'unique', 'targetClass' => get_class($this), 'filter' => ['!=', 'id', $this->id], 'on' => 'update'],
                             ['username',                        'match', 'pattern' => '/^[A-Z0-9._]+$/i'],
                             //@see http://www.zorched.net/2009/05/08/password-strength-validation-with-regular-expressions/
-                            ['password',                        'match', 'pattern' => '/^((?=.*\d)(?=.*[a-zA-Z])(?=.*\W).{6,20})$/i'],
+                            //['password',                        'match', 'pattern' => '/^((?=.*\d)(?=.*[a-zA-Z])(?=.*\W).{6,20})$/i'],
+                            ['password',                        'match', 'pattern' => '/^((?=.*\d)(?=.*[a-zA-Z]).{6,20})$/i'],
                             ['password',                        'required', 'on' => ['create', 'registration']],
                             ['timezone',                        'required', 'except' => ['registration', 'default', 'bulkedit']],
                             ['confirmPassword',                 'required', 'on' => ['create', 'registration']],
