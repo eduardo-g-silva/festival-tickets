@@ -951,37 +951,38 @@ body.registration.festival div#content {
 	background-image: url('/images/festival-reg.jpg');
 }
 body.registration div#content div.container {
-	width: 100%;
-	min-height: 100vh;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	flex-wrap: wrap;
+	/*width: auto;*/
+	/*min-height: 100vh;*/
+	/*display: -webkit-box;*/
+	/*display: -webkit-flex;*/
+	/*display: -moz-box;*/
+	/*display: -ms-flexbox;*/
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
 	justify-content: center;
 	align-items: center;
 	padding: 15px;
-	background: #db1563cc;
-	background: -webkit-linear-gradient(45deg, #d5007dcc, #e53935cc);
-	background: -o-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
-	background: -moz-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
-	background: linear-gradient(45deg, #d5007dcc, #e53935cc);
+	/*background: #db1563cc;*/
+	/*background: -webkit-linear-gradient(45deg, #d5007dcc, #e53935cc);*/
+	/*background: -o-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));*/
+	/*background: -moz-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));*/
+	/*background: linear-gradient(45deg, #d5007dcc, #e53935cc);*/
 }
 body.registration div#reg-champ-form {
-	max-width: 1200px;
 	background: #fff;
 	border-radius: 10px;
-	overflow: hidden;
 	padding: 10px 55px 40px 55px;
 }
 
 body.registration.login div#reg-champ-form {
-	max-width: 1200px;
 	background: #fff;
 	border-radius: 10px;
-	overflow: hidden;
 	padding: 10px 55px 40px 55px;
+}
+@media (max-width: 478px) {
+	body.registration div#reg-champ-form {
+		padding: 3px;
+	}
 }
 .logo-form {
 	text-align: center;
@@ -1053,6 +1054,15 @@ body.registration .well {
 	border: #ba0404 solid 1px;
 	float: right;
 }
+@media (max-width: 478px) {
+	.reg-form-btn-submit {
+		float: right;
+		width: 56%;
+		font-size: 1.2em;
+		padding: 3px;
+		height: 36px;
+	}
+}
 
 .reg-form-btn-submit.new-registration {
 	padding: 0 10px;
@@ -1072,6 +1082,13 @@ button#savebutton {
 	font-size: 1.5em;
 	color: #373435;
 	line-height: 1.2;
+}
+@media (max-width: 478px) {
+	.about-registration {
+		padding: 0 3px 3px 3px;
+		font-size: 1em;
+		line-height: 1;
+	}
 }
 
 .reg-form-btn-cancel {
@@ -1096,7 +1113,18 @@ button#savebutton {
 	background: linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
 	border: #ba0404 solid 1px;
 	float: left;
+	margin-bottom: 10px;
 }
+@media (max-width: 478px) {
+	.reg-form-btn-cancel {
+		float: left;
+		font-size: 1em;
+		padding: 17px;
+		height: 30px;
+	}
+}
+
+
 .reg-form-btn-cancel:hover,
 .reg-form-btn-submit:hover,
 .reg-form-btn-cancel:focus,
