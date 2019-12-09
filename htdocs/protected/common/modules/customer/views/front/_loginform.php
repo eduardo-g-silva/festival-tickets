@@ -35,5 +35,5 @@ $form = ActiveForm::begin([
 <?= $form->field($model, 'username')->textInput();?>
 <?= $form->field($model, 'password', ['template' => $passwordTemplate])->passwordInput();?>
 <?= $form->field($model, 'rememberMe', ['horizontalCssClasses' => ['wrapper'   => '', 'offset' => '']])->checkbox();?>
-<?= Html::submitButton(UsniAdaptor::t('users', 'Login'), ['id' => 'savebutton', 'class' => 'btn btn-success']);?>
+<?= Html::submitButton(UsniAdaptor::t('users', 'Login'), ['id' => 'savebutton', 'class' => 'reg-form-btn-submit login']);?>
 <?php ActiveForm::end();?>

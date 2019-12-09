@@ -1,7 +1,13 @@
 <?php
 use usni\UsniAdaptor;
 use yii\helpers\Html;
+use yii\helpers\Url;
+
+if ( Yii::$app->user->isGuest )
+return Yii::$app->getResponse()->redirect('/customer/site/login',302);
 ?>
+
+
 <h3 class="home">UK Tango Festival & Championship Registration 2020</h3>
 <div class="row">
     <div class="col-xs-12">

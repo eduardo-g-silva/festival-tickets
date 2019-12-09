@@ -4,7 +4,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  */
 use usni\library\utils\Html;
-use usni\UsniAdaptor
+use usni\UsniAdaptor;
 ?>
 
 <!-- Sidebar navigation -->

@@ -1,8 +1,8 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	color: #666;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 20px;
 	width: 100%;
 }
@@ -29,33 +29,33 @@ h6 {
 	font-size: 10.2px;
 }
 a {
-	color: #5cb85c;
+	color: #1e8b28;
 }
 a:hover {
 	text-decoration: none;
-    color: #419641;
+    color: #204620;
 }
 legend {
 	font-size: 18px;
 	padding: 7px 0px
 }
 label {
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: normal;
 }
 select.form-control, textarea.form-control, input[type="text"].form-control, input[type="password"].form-control, input[type="datetime"].form-control, input[type="datetime-local"].form-control, input[type="date"].form-control, input[type="month"].form-control, input[type="time"].form-control, input[type="week"].form-control, input[type="number"].form-control, input[type="email"].form-control, input[type="url"].form-control, input[type="search"].form-control, input[type="tel"].form-control, input[type="color"].form-control {
-	font-size: 13px;
+	font-size: 15px;
 }
 .input-group input, .input-group select, .input-group .dropdown-menu, .input-group .popover {
-	font-size: 13px;
+	font-size: 15px;
 }
 .input-group .input-group-addon {
-	font-size: 13px;
+	font-size: 15px;
 	height: 30px;
 }
 
 .btn {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /* Fix some bootstrap issues */
@@ -81,10 +81,10 @@ div.required .control-label:before {
 }
 /* top */
 #top {
-	background-color: #EEEEEE;
-	border-bottom: 1px solid #e2e2e2;
+	background-color: #1e1c1c;
+	border-bottom: 1px solid #9e9797;
 	padding: 4px 0px 3px 0;
-	margin: 0 0 20px 0;
+	margin: 0;
 	min-height: 40px;
 }
 #top .container {
@@ -92,23 +92,46 @@ div.required .control-label:before {
 }
 
 #top-links li, #top-links a {
-	color: #888;
-	text-shadow: 0 1px 0 #FFF;
+	color: #e1dfdf;
 	text-decoration: none;
+	text-shadow: none;
 }
 #top-links a:hover {
-	color: #444;
+	color: #fff;
 }
 #top-links .dropdown-menu a {
 	text-shadow: none;
     font-size: 13px;
 }
 #top-links .dropdown-menu a:hover {
-	color: #888;
+	color: #fff;
 }
 #top-links {
 	padding-top: 6px;
 }
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #333;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid #00000026;
+	border-radius: 4px;
+	/* -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175); */
+	/* box-shadow: 0 6px 12px rgba(0,0,0,.175); */
+}
+
 
 /* logo */
 #logo {
@@ -127,7 +150,6 @@ div.required .control-label:before {
 	font-size: 15px;
 	line-height: 18px;
 	padding: 10px 35px;
-	text-shadow: 0 1px 0 #FFF;
 }
 /* cart */
 #cart {
@@ -303,7 +325,7 @@ div.required .control-label:before {
 
 /* footer */
 footer {
-	margin-top: 30px;
+	margin-top: 0px;
 	padding-top: 30px;
 	background-color: #303030;
 	border-top: 1px solid #ddd;
@@ -904,6 +926,185 @@ i.fa.fa-eye, i.fa.fa-pencil, i.fa.fa-trash-o, i.fa.fa-lock, i.fa.fa-close  {
 }
 
 
+/*forms*/
+body.registration.login div#content {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-image: url('/images/festival-reg.jpg');
+}
+
+body.registration.championship div#content {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-image: url('/images/champion-reg.jpg');
+}
+
+body.registration.festival div#content {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-image: url('/images/festival-reg.jpg');
+}
+body.registration div#content div.container {
+	width: 100%;
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	background: #db1563cc;
+	background: -webkit-linear-gradient(45deg, #d5007dcc, #e53935cc);
+	background: -o-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+	background: -moz-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+	background: linear-gradient(45deg, #d5007dcc, #e53935cc);
+}
+body.registration div#reg-champ-form {
+	max-width: 1200px;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10px 55px 40px 55px;
+}
+
+body.registration.login div#reg-champ-form {
+	max-width: 1200px;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10px 55px 40px 55px;
+}
+.logo-form {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.logo-form img {
+	max-width: 80px;
+}
+
+body.registration .panel-heading {
+	display: none;
+}
+body.registration header {
+	display: none;
+}
+p.help-block.col-sm-3 {
+	display: none;
+}
+
+body.registration .well {
+	min-height: 355px;
+}
+
+.championship-form-title {
+	display: block;
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 2.7em;
+	color: #333;
+	line-height: 1.2;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.championship-form-subtitle {
+	display: block;
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 1.6em;
+	color: #6e6e6e;
+	line-height: 1;
+	text-align: center;
+	padding-bottom: 10px;
+	width: 100%;
+	border-bottom: solid #0000005e 1px;
+	margin-bottom: 20px;
+}
+
+.reg-form-btn-submit {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	height: 50px;
+	font-family: Poppins;
+	font-weight: 500;
+	font-size: 1.5em;
+	color: #faf6f6;
+	line-height: 1.2;
+	background: #db1563;
+	background: -webkit-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+	background: -o-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+	background: -moz-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+	background: linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+	border: #ba0404 solid 1px;
+	float: right;
+}
+
+.reg-form-btn-submit.new-registration {
+	padding: 0 10px;
+	text-align: center;
+	font-size: 1.3em;
+	min-width: 215px;
+	margin-bottom: 20px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+button#savebutton {
+	margin-top: -30px;
+}
+.about-registration {
+	padding: 0 20px 25px 20px;
+	font-size: 1.5em;
+	color: #373435;
+	line-height: 1.2;
+}
+
+.reg-form-btn-cancel {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	height: 50px;
+	font-family: Poppins;
+	font-weight: 500;
+	font-size: 1.5em;
+	color: #faf6f6;
+	line-height: 1.2;
+	background: #db1563;
+	background: -webkit-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+	background: -o-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+	background: -moz-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+	background: linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
+	border: #ba0404 solid 1px;
+	float: left;
+}
+.reg-form-btn-cancel:hover,
+.reg-form-btn-submit:hover,
+.reg-form-btn-cancel:focus,
+.reg-form-btn-submit:focus
+{
+	color: #faf6f6;
+	font-weight: bolder;
+}
 
 
 

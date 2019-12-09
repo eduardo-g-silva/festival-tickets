@@ -6,6 +6,7 @@
 use usni\UsniAdaptor;
 
 $title          = UsniAdaptor::t('users', 'Register to Championship');
+$this->bodyClass = 'registration championship';
 $this->title    = $title;
 $this->params['breadcrumbs'] = [    
                                     [
@@ -16,4 +17,4 @@ $this->params['breadcrumbs'] = [
                                         'label' => UsniAdaptor::t('users', 'Register to Championship')
                                     ]
                                ];
-echo $this->render('/front/_tabformchampionship', ['formDTO' => $formDTO]);
+echo $this->render('/front/_formchampionship', ['formDTO' => $formDTO]);

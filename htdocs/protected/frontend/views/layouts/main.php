@@ -35,6 +35,7 @@ else
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="robots" content="noindex,nofollow"/>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <link rel="icon" type="image/ico" href="<?php echo $this->getFavIcon(); ?>" />
         <?php echo Html::csrfMetaTags() ?>
         <title><?php echo Html::encode($this->title); ?></title>

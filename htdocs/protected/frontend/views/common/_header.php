@@ -6,6 +6,9 @@ use frontend\widgets\CurrencySelector;
 
 /* @var $this \frontend\web\View */
 ?>
+
+<?php if ( !Yii::$app->user->isGuest ): ?>
+
 <nav id="top">
     <div class="container">
         <div class="hidden-xs hidden-sm hidden-md pull-left" id="local-options">
@@ -36,16 +39,18 @@ use frontend\widgets\CurrencySelector;
             </ul>
         </div>
         <?php
-         echo $this->render("//common/_topnav");
+            echo $this->render("//common/_topnav");
         ?>
     </div>
 </nav>
+<?php endif; ?>
+
 <header>
     <div class="container header-row">
         <div class="row">
             <div class="col-sm-8">
                 <div id="logo">
-                    <?php echo $this->render("//common/_logo");?>
+                    <?php //echo $this->render("//common/_logo");?>
                 </div>
             </div>
             <?php //echo $this->render("//common/_navSearch");?>
