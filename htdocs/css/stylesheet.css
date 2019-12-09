@@ -1100,7 +1100,7 @@ button#savebutton {
 @media (max-width: 478px) {
 	.about-registration {
 		padding: 0 3px 3px 3px;
-		font-size: 1.1em;
+		font-size: 1em;
 		line-height: 1.3;
 	}
 }
