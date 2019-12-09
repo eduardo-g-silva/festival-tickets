@@ -973,15 +973,19 @@ body.registration div#reg-champ-form {
 	border-radius: 10px;
 	padding: 10px 55px 40px 55px;
 }
-
+@media (max-width: 478px) {
+	body.registration div#reg-champ-form {
+		padding: 5px;
+	}
+}
 body.registration.login div#reg-champ-form {
 	background: #fff;
 	border-radius: 10px;
 	padding: 10px 55px 40px 55px;
 }
 @media (max-width: 478px) {
-	body.registration div#reg-champ-form {
-		padding: 3px;
+	body.registration.login div#reg-champ-form {
+		padding: 5px;
 	}
 }
 .logo-form {
@@ -1074,6 +1078,16 @@ body.registration .well {
 	margin-left: auto;
 	margin-right: auto;
 }
+@media (max-width: 478px) {
+	.reg-form-btn-submit.new-registration {
+		float: right;
+		width: 100%;
+		font-size: 1.4em;
+		padding: 3px;
+		height: 50px;
+	}
+}
+
 button#savebutton {
 	margin-top: -30px;
 }
@@ -1086,8 +1100,8 @@ button#savebutton {
 @media (max-width: 478px) {
 	.about-registration {
 		padding: 0 3px 3px 3px;
-		font-size: 1em;
-		line-height: 1;
+		font-size: 1.5em;
+		line-height: 1.3;
 	}
 }
 
