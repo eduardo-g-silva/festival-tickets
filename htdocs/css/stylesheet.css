@@ -74,7 +74,7 @@ div.required .control-label:before {
 /* Gradent to all drop down menus */
 .dropdown-menu li > a:hover {
 	text-decoration: none;
-	color: #ffffff;
+	color: #1d1c1c;
 	background-color: #5cb85c;
 	background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
 	background-repeat: repeat-x;
@@ -104,7 +104,7 @@ div.required .control-label:before {
     font-size: 13px;
 }
 #top-links .dropdown-menu a:hover {
-	color: #fff;
+	color: #0d0d0d;
 }
 #top-links {
 	padding-top: 6px;
@@ -123,7 +123,7 @@ div.required .control-label:before {
 	font-size: 14px;
 	text-align: left;
 	list-style: none;
-	background-color: #333;
+	background-color: #f30c74;
 	background-clip: padding-box;
 	border: 1px solid #ccc;
 	border: 1px solid #00000026;
@@ -205,14 +205,7 @@ div.required .control-label:before {
 }
 /* menu */
 #menu {
-    background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
-    background-image: -o-linear-gradient(top, #5cb85c 0%, #419641 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
-    background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-    background-repeat: repeat-x;
-    border-color: #3e8f3e;
+	background-color: #f30c74 ;
     min-height: 40px;
 }
 
@@ -222,7 +215,25 @@ div.required .control-label:before {
 	padding: 10px 15px 10px 15px;
 	min-height: 15px;
 	background-color: transparent;
+	font-size: 1.2em;
 }
+.dropdown-menu>li>a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: 400;
+	line-height: 1.42857143;
+	color: #f8f6f6;
+	white-space: nowrap;
+	font-size: 1.2em;
+}
+.navbar-toggle {
+	background-color: #fed301;
+}
+.navbar-toggle .icon-bar {
+	background-color: #000;
+}
+
 #menu .nav > li > a:hover, #menu .nav > li.open > a {
 	background-color: rgba(0, 0, 0, 0.1);
 }

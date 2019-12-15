@@ -1,14 +1,35 @@
 <?php
-use usni\UsniAdaptor;
-use frontend\widgets\GlobalMenu;
+
+use yii\bootstrap\NavBar;
+use yii\bootstrap\Nav;
 ?>
 <div class="container">
-  <nav id="menu" class="navbar">
-      <div class="navbar-header"><span id="category" class="visible-xs"><?php echo UsniAdaptor::t('productCategories', 'Workshops for ->'); ?></span>
-      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-    </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <?php echo GlobalMenu::widget();?>
-    </div>
-  </nav>
+<?php
+NavBar::begin([
+    //'brandLabel' => 'Home',
+    'innerContainerOptions' => ['class' => 'container-fluid'],
+    //'brandUrl' => Yii::$app->homeUrl,
+    'options' => [
+        'id' => 'menu',
+        'class' => 'navbar',
+    ],
+]);
+echo Nav::widget([
+    'options' => ['class' => 'navbar-nav navbar-left'],
+    'items' => [
+        ['label' => 'Festival Passes', 'url' => ['/site/about']],
+        ['label' => 'Competitor Passes', 'url' => ['/site/about']],
+        [
+            'label' => 'Workshops',
+            'items' => [
+                ['label' => 'Leaders', 'url' => '#'],
+                ['label' => 'Followers', 'url' => '#'],
+                ['label' => 'Couples', 'url' => '#'],
+                ['label' => 'Competitors', 'url' => '#'],
+            ],
+        ],
+    ],
+]);
+NavBar::end();
+?>
 </div>

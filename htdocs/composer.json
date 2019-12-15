@@ -33,7 +33,10 @@
         "yidas/yii2-bower-asset": "^2.0",
         "alkurn/yii2-stripe": "dev-master",
         "koolphp/koolreport": "^3.25",
-        "kartik-v/yii2-widgets": "dev-master"
+        "kartik-v/yii2-widgets": "dev-master",
+        "yiisoft/yii2-bootstrap4": "^2.0",
+        "kartik-v/yii2-bootstrap4-dropdown": "dev-master",
+        "kartik-v/yii2-nav-x": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",
