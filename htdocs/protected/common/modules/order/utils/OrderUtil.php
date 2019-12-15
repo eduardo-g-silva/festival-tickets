@@ -25,10 +25,6 @@ class OrderUtil
             $addressModel = (object)$addressModel;
         }
         $address = "$addressModel->firstname $addressModel->lastname <br>";
-        if($addressModel->registration_code != null)
-        {
-            $address .= "$addressModel->registration_code <br>";
-        }
         if($addressModel->address1 != null)
         {
             $address .= "$addressModel->address1 <br>";

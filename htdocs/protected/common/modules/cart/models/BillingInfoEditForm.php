@@ -21,8 +21,6 @@ use common\modules\order\models\OrderAddressDetails;
 class BillingInfoEditForm extends Model
 {
 
-    //EGS registration code
-    public  $registration_code;
     //Person fields
     public $email;
     public $firstname;
@@ -45,7 +43,6 @@ class BillingInfoEditForm extends Model
         return array(
             //Person rules EGS
             [['firstname', 'lastname'],         'string', 'max' => 32],
-            ['registration_code', 'required'],
             ['email',                           'required'],
             ['email',                           EmailValidator::className()],
             ['mobilephone',                     'number'],
@@ -53,7 +50,7 @@ class BillingInfoEditForm extends Model
             [['address1', 'city', 'country', 'postal_code', 'firstname', 'lastname', 'mobilephone'], 'required'],
             [['address1', 'address2'],          'string', 'max' => 128],
 			[['city', 'state', 'country'],      'string', 'max' => 64],
-			[['firstname', 'lastname', 'address1', 'city', 'country', 'postal_code', 'state', 'address2', 'email', 'officephone', 'mobilephone', 'registration_code'],  'safe'],
+			[['firstname', 'lastname', 'address1', 'city', 'country', 'postal_code', 'state', 'address2', 'email', 'officephone', 'mobilephone'],  'safe'],
         );
     }
 
