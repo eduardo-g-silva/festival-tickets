@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/festival-tickets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/festival-tickets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/messages/es/userhint.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/messages/es/userhint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/yiichimp" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/yiichimp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/backend/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/css/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabform.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabform.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabformchampionship.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_tabformchampionship.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_formchampionship.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_formchampionship.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_formfestival.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_formfestival.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +23,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -97,6 +109,11 @@
       <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-affix" />
       <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-growl" />
       <path value="$PROJECT_DIR$/htdocs/vendor/select2/select2" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/npm/bootstrap" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-bootstrap4" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-bootstrap4-dropdown" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-dropdown-x" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-nav-x" />
     </include_path>
   </component>
   <component name="ProjectId" id="1U3hPGsVX7UXpLLthmGxBY9RqK3" />
@@ -110,17 +127,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/htdocs/backend/assets/c4e4d20b" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/views" />
-      <recent name="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views" />
-      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/utils" />
-      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/models" />
-      <recent name="$PROJECT_DIR$/htdocs/vendor/eduardo-g-silva/yiichimp/library/modules/users/models/Base" />
+      <recent name="$PROJECT_DIR$/htdocs/backend/assets/c4e4d20b" />
+      <recent name="$PROJECT_DIR$/htdocs/backend/assets/c4e4d20b/css" />
+      <recent name="$PROJECT_DIR$/htdocs/assets/c4e4d20b/css" />
+      <recent name="$PROJECT_DIR$/htdocs/assets/c4e4d20b" />
+      <recent name="$PROJECT_DIR$/htdocs/protected/frontend/views/common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/extensions/yiichimp" />
@@ -154,6 +172,8 @@
       <workItem from="1574762132493" duration="17474000" />
       <workItem from="1575279581054" duration="21391000" />
       <workItem from="1575386854454" duration="3348000" />
+      <workItem from="1576425220393" duration="599000" />
+      <workItem from="1576488783241" duration="30771000" />
     </task>
     <servers />
   </component>
@@ -178,13 +198,21 @@
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="566" y="27" width="586" height="1023" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1575294658070" />
+    <state x="606" y="295" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576506751446">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="606" y="295" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1576506751446" />
     <state x="656" y="295" width="424" height="484" key="FileChooserDialogImpl" timestamp="1575292475016">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="656" y="295" width="424" height="484" key="FileChooserDialogImpl/67.27.1613.1023@67.27.1613.1023" timestamp="1575292475016" />
-    <state x="67" y="27" width="1599" height="770" key="find.popup" timestamp="1575392313329">
+    <state x="81" y="133" width="1599" height="917" key="find.popup" timestamp="1576554698043">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state x="67" y="27" width="1599" height="770" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1575392313329" />
+    <state x="81" y="133" width="1599" height="917" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1576554698043" />
+    <state x="598" y="451" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1576543528392">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="598" y="451" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1576543528392" />
   </component>
 </project>

@@ -51,7 +51,7 @@ $form = TabbedActiveForm::begin([
         <?= Html::activeHiddenInput($model, 'status', ['value' => Customer::STATUS_PENDING]); ?>
         <?= Html::activeHiddenInput($model, 'type', ['value' => CustomerTypeUtil::CUSTOMER_TYPE_COMPETITOR]); ?>
         <?= Html::activeHiddenInput($model, 'progress', ['value' => CustomerProgressUtil::CUSTOMER_PROGRESS_WAITING]); ?>
-        <?= Html::activeHiddenInput($model, 'groups', ['value' => $formDTO->getGroups()]); ?>
+        <?= Html::activeHiddenInput($model, 'groups', ['value' => '8']); ?>
         <?= $form->field($model, 'username')->textInput(['style'=>'max-width:300px']); ?>
         <?= $form->field($model, 'password')->passwordInput(['style'=>'max-width:300px']); ?>
         <?= $form->field($model, 'confirmPassword')->passwordInput(['style'=>'max-width:300px']); ?>
@@ -111,16 +111,10 @@ $form = TabbedActiveForm::begin([
 <?php
 $script = <<< JS
  $(document).ready(function() {
-   $('#person-couple').on('change', function() {
-    if ( $(event.target).val() == '1') {
-       $('input#customer-type').val('4');
-       $(".field-person-partner_firstname").show();
-       $(".field-person-partner_lastname").show();
-    } else {
-       $('input#customer-type').val('3');
-       $(".field-person-partner_firstname").hide();
-       $(".field-person-partner_lastname").hide();
-      }
+   $('#customerprofileeditview').on('beforeSubmit', function (e) {
+        $('#save').html('Sending please wait...');
+        $('#save').attr('disabled','disabled');
+        return true;
     });
  });
 JS;

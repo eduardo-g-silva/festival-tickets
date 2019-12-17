@@ -49,9 +49,8 @@ $form = TabbedActiveForm::begin([
     <div class="col-sm-12">
         <span class="championship-form-subtitle">Account Details</span>
         <?= Html::activeHiddenInput($model, 'status', ['value' => Customer::STATUS_PENDING]); ?>
-        <?= Html::activeHiddenInput($model, 'type', ['value' => CustomerTypeUtil::CUSTOMER_TYPE_COMPETITOR]); ?>
         <?= Html::activeHiddenInput($model, 'progress', ['value' => CustomerProgressUtil::CUSTOMER_PROGRESS_WAITING]); ?>
-        <?= Html::activeHiddenInput($model, 'groups', ['value' => $formDTO->getGroups()]); ?>
+        <?= Html::activeHiddenInput($model, 'groups', ['value' => '2']); ?>
         <?= $form->field($model, 'username')->textInput(['style'=>'max-width:300px']); ?>
         <?= $form->field($model, 'password')->passwordInput(['style'=>'max-width:300px']); ?>
         <?= $form->field($model, 'confirmPassword')->passwordInput(['style'=>'max-width:300px']); ?>
@@ -61,16 +60,16 @@ $form = TabbedActiveForm::begin([
     <div class="form-group row">
         <div class="col-sm-12">
             <span class="championship-form-subtitle">Dancer Details</span>
-            <?= Html::activeHiddenInput($modelPerson, 'type', ['value' => CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_SINGLE]);?>
+            <?= Html::activeHiddenInput($modelPerson, 'registration_type', ['value' => "N/A"]);?>
             <?= Html::activeHiddenInput($modelPerson, 'city', ['value' => "N/A"]);?>
+            <?= Html::activeHiddenInput($modelPerson, 'partner_role', ['value' => "N/A"]);?>
             <?= Html::activeHiddenInput($modelPerson, 'partner_city', ['value' => "N/A"]);?>
-            <?= $form->field($modelPerson, 'dancing_role')->dropDownList(['Leader' => 'Leader', 'Follower' => 'Follower'],['prompt'=>'Select Option','style'=>'max-width:150px']);?>
             <?= $form->field($modelPerson, 'firstname')->textInput(['style'=>'max-width:300px']);?>
             <?= $form->field($modelPerson, 'lastname')->textInput(['style'=>'max-width:300px']);?>
             <?= $form->field($modelPerson, 'email')->textInput(['style'=>'max-width:300px']);?>
             <?= $form->field($modelPerson, 'mobilephone')->textInput(['style'=>'max-width:300px']);?>
-            <?= $form->field($modelPerson, 'couple')->dropDownList(['1' => 'Yes', '0' => 'No'],['prompt'=>'Select Option','style'=>'max-width:150px']); ?>
-            <br>
+            <?= $form->field($model, 'type')->dropDownList([CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_COUPLE => 'Couple', CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_LEADER => 'Leader',CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_FOLLOWER => 'Follower'],['prompt'=>'Please select','style'=>'max-width:200px'])->label("Ticket Type"); ?>
+            <?= $form->field($modelPerson, 'dancing_role')->dropDownList(['Leader' => 'Leader', 'Follower' => 'Follower'],['prompt'=>'Please select','style'=>'max-width:200px'])->label('Your Dancing Role');?>
             <?= $form->field($modelPerson, 'partner_firstname');?>
             <?= $form->field($modelPerson, 'partner_lastname')->textInput();?>
             <?= $form->field($modelPerson, 'comments')->textarea(['options' => ['placeholder' => 'Anthing you want to let us know ...']]); ?>
@@ -102,18 +101,48 @@ $form = TabbedActiveForm::begin([
 <?php
 $script = <<< JS
  $(document).ready(function() {
-   $('#person-couple').on('change', function() {
-    if ( $(event.target).val() == '1') {
-       $('input#customer-type').val('4');
+   $(".field-person-dancing_role").hide();
+   $(".field-person-partner_firstname").hide();
+   $(".field-person-partner_lastname").hide();
+   $('#customer-type').on('change', function() {
+    if ( $(event.target).val() == '5') { //couple
+       $('#person-dancing_role').val('');
+       $('#person-partner_firstname').val('');
+       $('#person-partner_lastname').val('');
+       $('#customer-groups').val('7');
+       $(".field-person-dancing_role").show();
        $(".field-person-partner_firstname").show();
        $(".field-person-partner_lastname").show();
-    } else {
-       $('input#customer-type').val('3');
+    } else{
+        if ( $(event.target).val() == '3') { //leader
+            $('#person-dancing_role').val('Leader');
+            $('#customer-groups').val('10');
+        }
+        if ( $(event.target).val() == '4') { //follower
+            $('#person-dancing_role').val('Follower');
+            $('#customer-groups').val('11');
+        }
+       $(".field-person-dancing_role").hide();
        $(".field-person-partner_firstname").hide();
        $(".field-person-partner_lastname").hide();
+       $('input#person-partner_role').val('N/A');
+       $('#person-partner_firstname').val('N/A');
+       $('#person-partner_lastname').val('N/A');
       }
     });
- });
+   $('#person-dancing_role').on('change', function() {
+    if ( $(event.target).val() == 'Leader') {
+       $('input#person-partner_role').val('Follower');
+    } else {
+       $('input#person-partner_role').val('Leader');
+      }
+    });
+   $('#customerprofileeditview').on('beforeSubmit', function (e) {
+        $('#save').html('Sending please wait...');
+        $('#save').attr('disabled','disabled');
+        return true;
+    });
+});
 JS;
 $this->registerJs($script, View::POS_READY);
 ?>

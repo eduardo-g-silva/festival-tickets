@@ -75,6 +75,11 @@
       <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-affix" />
       <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-widget-growl" />
       <path value="$PROJECT_DIR$/htdocs/vendor/select2/select2" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/npm/bootstrap" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/yiisoft/yii2-bootstrap4" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-bootstrap4-dropdown" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-dropdown-x" />
+      <path value="$PROJECT_DIR$/htdocs/vendor/kartik-v/yii2-nav-x" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.4.0" />

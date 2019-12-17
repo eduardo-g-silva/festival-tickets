@@ -220,3 +220,13 @@ div.required .control-label:after {content: " *"; color: red;}
     opacity: 1;
 }
 
+div#customergridview i,
+div#customergroupgridview i,
+div#ordergridview i,
+div#productgridview i,
+div#productcategorygridview i,
+div#storegridview
+{
+    font-size: 1.8em;
+}
+

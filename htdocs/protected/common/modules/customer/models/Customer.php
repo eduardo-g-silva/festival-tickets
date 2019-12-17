@@ -5,17 +5,17 @@
  */
 namespace customer\models;
 
+use customer\models\CustomerMetadata;
 use usni\library\utils\CustomerTypeUtil;
 use usni\UsniAdaptor;
 use usni\library\modules\users\models\User;
-
-use customer\models\CustomerMetadata;
 use usni\library\modules\users\models\Address;
 use usni\library\utils\ArrayUtil;
 use common\modules\order\models\Order;
 use usni\library\db\ActiveRecord;
 use usni\library\modules\auth\web\IAuthIdentity;
 use usni\library\utils\CustomerProgressUtil;
+
 /**
  * Customer is the base class for table tbl_customer.
  *
@@ -91,7 +91,7 @@ class Customer extends ActiveRecord implements IAuthIdentity
                             ['confirmPassword',                 'required', 'on' => ['create', 'registration']],
                             ['status',                          'default', 'value' => User::STATUS_PENDING],
                             ['progress',                        'default', 'value' => CustomerProgressUtil::CUSTOMER_PROGRESS_WAITING],
-                            ['type',                            'safe'],
+                            ['type',                            'required'],
                             ['groups',                          'safe'],
                             [['confirmPassword'], 'compare', 'compareAttribute' => 'password', 'on' => ['create', 'registration']],
                             ['unique_id', 'safe'],
@@ -157,7 +157,16 @@ class Customer extends ActiveRecord implements IAuthIdentity
     {
         return $this->hasOne(CustomerMetadata::className(), ['customer_id' => 'id']);
     }
-    
+
+    /**
+     * Get passes for the customer.
+     * @return CustomerPasses
+     */
+    public function getPasses()
+    {
+        return $this->hasOne(CustomerPasses::className(), ['customer_id' => 'id']);
+    }
+
     /**
      * @inheritdoc
      */

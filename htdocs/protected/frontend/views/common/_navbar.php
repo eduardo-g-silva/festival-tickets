@@ -7,28 +7,41 @@ use yii\bootstrap\Nav;
 $model  = UsniAdaptor::app()->user->getIdentity();
 
 switch ($model->type) {
-    case CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_SINGLE:
+    case CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_LEADER:
         $items = [
-            ['label' => 'Festival Passes (single)', 'url' => ['/catalog/productCategories/site/view?id=5']],
+            ['label' => 'Festival Leader Passes', 'url' => ['/catalog/productCategories/site/view?id=15']],
             [
                 'label' => 'Workshops',
                 'items' => [
                     ['label' => 'Leaders', 'url' => '/catalog/productCategories/site/view?id=4'],
-                    ['label' => 'Followers', 'url' => '/catalog/productCategories/site/view?id=4'],
-                    ['label' => 'Couples', 'url' => '/catalog/productCategories/site/view?id=4'],
+                    ['label' => 'Followers', 'url' => '/catalog/productCategories/site/view?id=16'],
+                    ['label' => 'Couples', 'url' => '/catalog/productCategories/site/view?id=18'],
+                ],
+            ],
+        ];
+        break;
+    case CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_FOLLOWER:
+        $items = [
+            ['label' => 'Festival Follower Passes', 'url' => ['/catalog/productCategories/site/view?id=5']],
+            [
+                'label' => 'Workshops',
+                'items' => [
+                    ['label' => 'Leaders', 'url' => '/catalog/productCategories/site/view?id=4'],
+                    ['label' => 'Followers', 'url' => '/catalog/productCategories/site/view?id=16'],
+                    ['label' => 'Couples', 'url' => '/catalog/productCategories/site/view?id=18'],
                 ],
             ],
         ];
         break;
     case CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_COUPLE:
         $items = [
-            ['label' => 'Festival Passes (couples)', 'url' => ['/site/about']],
+            ['label' => 'Festival Couples Passes', 'url' => ['/catalog/productCategories/site/view?id=17']],
             [
                 'label' => 'Workshops',
                 'items' => [
                     ['label' => 'Leaders', 'url' => '/catalog/productCategories/site/view?id=4'],
-                    ['label' => 'Followers', 'url' => '/catalog/productCategories/site/view?id=4'],
-                    ['label' => 'Couples', 'url' => '/catalog/productCategories/site/view?id=4'],
+                    ['label' => 'Followers', 'url' => '/catalog/productCategories/site/view?id=16'],
+                    ['label' => 'Couples', 'url' => '/catalog/productCategories/site/view?id=18'],
                 ],
             ],
         ];
@@ -39,15 +52,16 @@ switch ($model->type) {
             [
                 'label' => 'Workshops',
                 'items' => [
+                    ['label' => 'Competitors', 'url' => '/catalog/productCategories/site/view?id=19'],
+                    '<li class="divider"></li>',
                     ['label' => 'Leaders', 'url' => '/catalog/productCategories/site/view?id=4'],
-                    ['label' => 'Followers', 'url' => '/catalog/productCategories/site/view?id=4'],
-                    ['label' => 'Couples', 'url' => '/catalog/productCategories/site/view?id=4'],
-                    ['label' => 'Competitors', 'url' => '/catalog/productCategories/site/view?id=4'],
+                    ['label' => 'Followers', 'url' => '/catalog/productCategories/site/view?id=16'],
+                    ['label' => 'Couples', 'url' => '/catalog/productCategories/site/view?id=18'],
                 ],
             ],
         ];
         break;
-    default: //volunteer, concesion, workshop
+    default: //volunteer, concession, workshop
         $items = [
             [
                 'label' => 'Workshops',
