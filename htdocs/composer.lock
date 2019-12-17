@@ -942,7 +942,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eduardo-g-silva/yiichimp",
-                "reference": "5f2bbe8a8e05c58a501b8db08c72a9209db587b9"
+                "reference": "90ee96940ac3f9bdd42af4b4f2f49ae0eed8e436"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -965,7 +965,7 @@
             "support": {
                 "issues": "https://github.com/eduardo-g-silva/yiichimp/issues"
             },
-            "time": "2019-12-10T19:29:08+00:00"
+            "time": "2019-12-17T04:32:45+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1016,16 +1016,16 @@
         },
         {
             "name": "fortawesome/font-awesome",
-            "version": "5.11.2",
+            "version": "5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "1c1b102b2ba19518d77e60e97cf1b4ebf133bba0"
+                "reference": "d8db3d032d22e7a5e21f3b40905b7867be19bb02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/1c1b102b2ba19518d77e60e97cf1b4ebf133bba0",
-                "reference": "1c1b102b2ba19518d77e60e97cf1b4ebf133bba0",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/d8db3d032d22e7a5e21f3b40905b7867be19bb02",
+                "reference": "d8db3d032d22e7a5e21f3b40905b7867be19bb02",
                 "shasum": ""
             },
             "type": "library",
@@ -1075,7 +1075,7 @@
                 "icon",
                 "svg"
             ],
-            "time": "2019-09-23T18:57:22+00:00"
+            "time": "2019-12-10T22:52:13+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1268,16 +1268,16 @@
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
-            "version": "v5.0.7",
+            "version": "v5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "4a656ecf33088207834c7062db7cb61566648713"
+                "reference": "5d9c09364b8bf9e7ef0238bbb84cd108199eef05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/4a656ecf33088207834c7062db7cb61566648713",
-                "reference": "4a656ecf33088207834c7062db7cb61566648713",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/5d9c09364b8bf9e7ef0238bbb84cd108199eef05",
+                "reference": "5d9c09364b8bf9e7ef0238bbb84cd108199eef05",
                 "shasum": ""
             },
             "type": "library",
@@ -1317,7 +1317,7 @@
                 "progress",
                 "upload"
             ],
-            "time": "2019-11-17T12:22:22+00:00"
+            "time": "2019-12-13T10:21:22+00:00"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
