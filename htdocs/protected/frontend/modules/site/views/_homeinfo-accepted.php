@@ -16,9 +16,8 @@ $model  = UsniAdaptor::app()->user->getIdentity();
     <div class="col-xs-12">
         <div class="home-info">
             <p>Dear <?= $model->name; ?>,</p>
-            <p>Your email has been validated!</p>
-            <p>If you have registered as single, you will be in a waiting list until another complementary dancer registers. We will send you an email when this takes place.</p>
-            <p>If you have registered as a couple shortly you will receive a confirmation email for you to login and buy your tickets.</p>
+            <p>In this site you can buy Festival, Competitor Passes and Workshops.</p>
+            <p>You can also see the detail of the items you bought in <?= Html::a('Your Account', ['/customer/site/my-account']) ?>.</p>
             <p>If you have any problem or inquire you can email us to: <a href = "mailto: info@uktangofestival.com">info@uktangofestival.com</a></p>
             <br>
             <br>
