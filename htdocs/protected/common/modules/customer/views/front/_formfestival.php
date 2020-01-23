@@ -68,10 +68,12 @@ $form = TabbedActiveForm::begin([
             <?= $form->field($modelPerson, 'lastname')->textInput(['style'=>'max-width:300px']);?>
             <?= $form->field($modelPerson, 'email')->textInput(['style'=>'max-width:300px']);?>
             <?= $form->field($modelPerson, 'mobilephone')->textInput(['style'=>'max-width:300px']);?>
+            <?= $form->field($modelPerson, 'facebook')->textInput(['style'=>'max-width:300px']);?>
             <?= $form->field($model, 'type')->dropDownList([CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_COUPLE => 'Couple', CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_LEADER => 'Leader',CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_FOLLOWER => 'Follower'],['prompt'=>'Please select','style'=>'max-width:200px'])->label("Ticket Type"); ?>
             <?= $form->field($modelPerson, 'dancing_role')->dropDownList(['Leader' => 'Leader', 'Follower' => 'Follower'],['prompt'=>'Please select','style'=>'max-width:200px'])->label('Your Dancing Role');?>
             <?= $form->field($modelPerson, 'partner_firstname');?>
             <?= $form->field($modelPerson, 'partner_lastname')->textInput();?>
+            <?= $form->field($modelPerson, 'partner_facebook')->textInput();?>
             <?= $form->field($modelPerson, 'comments')->textarea(['options' => ['placeholder' => 'Anthing you want to let us know ...']]); ?>
         </div>
     </div>
@@ -104,15 +106,18 @@ $script = <<< JS
    $(".field-person-dancing_role").hide();
    $(".field-person-partner_firstname").hide();
    $(".field-person-partner_lastname").hide();
+   $(".field-person-partner_facebook").hide();
    $('#customer-type').on('change', function() {
     if ( $(event.target).val() == '5') { //couple
        $('#person-dancing_role').val('');
        $('#person-partner_firstname').val('');
        $('#person-partner_lastname').val('');
+       $('#person-partner_facebook').val('');
        $('#customer-groups').val('7');
        $(".field-person-dancing_role").show();
        $(".field-person-partner_firstname").show();
        $(".field-person-partner_lastname").show();
+       $(".field-person-partner_facebook").show();
     } else{
         if ( $(event.target).val() == '3') { //leader
             $('#person-dancing_role').val('Leader');
@@ -125,9 +130,11 @@ $script = <<< JS
        $(".field-person-dancing_role").hide();
        $(".field-person-partner_firstname").hide();
        $(".field-person-partner_lastname").hide();
+       $(".field-person-partner_facebook").hide();
        $('input#person-partner_role').val('N/A');
        $('#person-partner_firstname').val('N/A');
        $('#person-partner_lastname').val('N/A');
+       $('#person-partner_facebook').val('N/A');
       }
     });
    $('#person-dancing_role').on('change', function() {
