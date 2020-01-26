@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/festival-tickets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/festival-tickets.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extensions/yiichimp" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/yiichimp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/backend/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/backend/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/models/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_formchampionship.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_formchampionship.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_formfestival.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_formfestival.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/views/front/_sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,19 +118,20 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/htdocs/backend/assets/c4e4d20b" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fonts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fonts" />
+      <recent name="$PROJECT_DIR$/htdocs/protected/frontend/modules/site/views" />
+      <recent name="$PROJECT_DIR$/htdocs/backend/assets/6b9f00a7" />
+      <recent name="$PROJECT_DIR$/htdocs/backend/assets/6b9f00a7/css" />
       <recent name="$PROJECT_DIR$/htdocs/backend/assets/c4e4d20b" />
-      <recent name="$PROJECT_DIR$/htdocs/backend/assets/c4e4d20b/css" />
-      <recent name="$PROJECT_DIR$/htdocs/assets/c4e4d20b/css" />
-      <recent name="$PROJECT_DIR$/htdocs/assets/c4e4d20b" />
-      <recent name="$PROJECT_DIR$/htdocs/protected/frontend/views/common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/extensions/yiichimp" />
@@ -173,7 +166,11 @@
       <workItem from="1575279581054" duration="21391000" />
       <workItem from="1575386854454" duration="3348000" />
       <workItem from="1576425220393" duration="599000" />
-      <workItem from="1576488783241" duration="30771000" />
+      <workItem from="1576488783241" duration="32176000" />
+      <workItem from="1579795296220" duration="8219000" />
+      <workItem from="1579856243221" duration="1192000" />
+      <workItem from="1579980500069" duration="3037000" />
+      <workItem from="1580035047951" duration="2720000" />
     </task>
     <servers />
   </component>
@@ -206,10 +203,10 @@
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="656" y="295" width="424" height="484" key="FileChooserDialogImpl/67.27.1613.1023@67.27.1613.1023" timestamp="1575292475016" />
-    <state x="81" y="133" width="1599" height="917" key="find.popup" timestamp="1576554698043">
+    <state x="81" y="133" width="1599" height="917" key="find.popup" timestamp="1580040821242">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state x="81" y="133" width="1599" height="917" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1576554698043" />
+    <state x="81" y="133" width="1599" height="917" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1580040821242" />
     <state x="598" y="451" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1576543528392">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
