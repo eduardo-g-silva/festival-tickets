@@ -49,7 +49,7 @@ $widgetParams   = [
                                         ],
                                         [
                                             'class' => MyOrderActionColumn::className(),
-                                            'template' => '{view}',
+                                            'template' => '{view} View',
                                             'modelClassName' => Order::className()
                                         ]
                                      ],
