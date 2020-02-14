@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/backend/config/reportsmenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/backend/config/reportsmenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/grid/CustomerActionColumn.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/grid/CustomerActionColumn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/workshops/WorkshopsSales.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/workshops/WorkshopsSales.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/frontend/modules/site/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/frontend/modules/site/views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/festivalSales/FestivalSales.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/festivalSales/FestivalSales.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +174,7 @@
       <workItem from="1580118406999" duration="6789000" />
       <workItem from="1580828547379" duration="935000" />
       <workItem from="1581327924952" duration="1134000" />
-      <workItem from="1581672633718" duration="4693000" />
+      <workItem from="1581672633718" duration="4942000" />
     </task>
     <servers />
   </component>

@@ -4,7 +4,7 @@ use \koolreport\widgets\google\BarChart;
 ?>
 
     <div class="text-center">
-        <h1>Tango Festival UK 2019 Sales Report</h1>
+        <h1>Tango Festival UK 2020 Sales Report</h1>
         <h4>This report shows top sales</h4>
     </div>
     <hr/>
