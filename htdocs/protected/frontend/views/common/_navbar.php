@@ -10,7 +10,8 @@ $model  = UsniAdaptor::app()->user->getIdentity();
 switch ($model->type) {
     case CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_LEADER:
         $items = [
-            ['label' => 'Festival Leader Passes', 'url' => ['/catalog/productCategories/site/view?id=15']],
+            ['label' => 'Home', 'url' => ['/']],
+            ['label' => 'Buy Leader Passes', 'url' => ['/catalog/productCategories/site/view?id=15']],
 //            [
 //                'label' => 'Workshops',
 //                'items' => [
@@ -19,11 +20,13 @@ switch ($model->type) {
 //                    ['label' => 'Couples', 'url' => '/catalog/productCategories/site/view?id=18'],
 //                ],
 //            ],
+            ['label' => 'Program', 'url' => ['/cms/site/page?alias=program']],
+            ['label' => 'About Us', 'url' => ['/cms/site/page?alias=about-us']],
         ];
         break;
     case CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_FOLLOWER:
         $items = [
-            ['label' => 'Festival Follower Passes', 'url' => ['/catalog/productCategories/site/view?id=5']],
+            ['label' => 'Buy Follower Passes', 'url' => ['/catalog/productCategories/site/view?id=5']],
 //            [
 //                'label' => 'Workshops',
 //                'items' => [
@@ -36,7 +39,7 @@ switch ($model->type) {
         break;
     case CustomerTypeUtil::CUSTOMER_TYPE_FESTIVAL_COUPLE:
         $items = [
-            ['label' => 'Festival Couples Passes', 'url' => ['/catalog/productCategories/site/view?id=17']],
+            ['label' => 'Buy Couples Passes', 'url' => ['/catalog/productCategories/site/view?id=17']],
 //            [
 //                'label' => 'Workshops',
 //                'items' => [
@@ -49,7 +52,7 @@ switch ($model->type) {
         break;
     case CustomerTypeUtil::CUSTOMER_TYPE_COMPETITOR:
         $items = [
-            ['label' => 'Competitor Passes', 'url' => ['/catalog/productCategories/site/view?id=6']],
+            ['label' => 'Buy Competitor Passes', 'url' => ['/catalog/productCategories/site/view?id=6']],
 //            [
 //                'label' => 'Workshops',
 //                'items' => [

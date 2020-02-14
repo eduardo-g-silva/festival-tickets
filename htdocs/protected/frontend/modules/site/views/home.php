@@ -10,11 +10,17 @@ $this->title = UsniAdaptor::t('application', 'Home');
 
 $model  = UsniAdaptor::app()->user->getIdentity();
 
-If ($model->progress == CustomerProgressUtil::CUSTOMER_PROGRESS_APPROVED or $model->progress == CustomerProgressUtil::CUSTOMER_PROGRESS_PAID) {
-    echo $this->render('/_homeinfo-accepted');
-} else {
+
+if (Yii::$app->user->isGuest) {
     echo $this->render('/_homeinfo');
+}else{
+    If ($model->progress == CustomerProgressUtil::CUSTOMER_PROGRESS_APPROVED or $model->progress == CustomerProgressUtil::CUSTOMER_PROGRESS_PAID) {
+        echo $this->render('/_homeinfo-accepted');
+    } else {
+        echo $this->render('/_homeinfo');
+    }
 }
+
 
 //echo $this->render('/_homeproductslist', ['products' => $homePageDTO->getCompetitorsProducts()]);
 

@@ -5,10 +5,12 @@
  */
 namespace customer\grid;
 
+use usni\library\utils\CustomerProgressUtil;
 use usni\UsniAdaptor;
 use usni\fontawesome\FA;
 use usni\library\utils\Html;
 use usni\library\modules\users\models\User;
+use unsi\library\utils;
 use usni\library\grid\ActionColumn;
 /**
  * CustomerActionColumn class file.
@@ -54,7 +56,36 @@ class CustomerActionColumn extends ActionColumn
         }
         return null;
     }
-    
+    /**
+     * egs work in progress....
+     * Renders Progress status link.
+     * @param string $url
+     * @param Model $model
+     * @param string $key
+     * @return string
+     */
+    public function renderChangeProgressLink($url, $model, $key)
+    {
+        if($this->checkAccess($model, 'update'))
+        {
+            if($model['status'] ==  CustomerProgressUtil::CUSTOMER_PROGRESS_WAITING)
+            {
+                $label = UsniAdaptor::t('users', 'Deactivate');
+                $icon  = FA::icon('close');
+                $url   = UsniAdaptor::createUrl("customer/default/change-status", array("id" => $model['id'], 'status' => User::STATUS_INACTIVE));
+            }
+            elseif($model['status'] == CustomerProgressUtil::CUSTOMER_PROGRESS_PAID || $model['status'] == User::STATUS_PENDING)
+            {
+                $label = UsniAdaptor::t('users', 'Activate');
+                $icon  = FA::icon('check');
+                $url   = UsniAdaptor::createUrl("customer/default/change-status", array("id" => $model['id'], 'status' => User::STATUS_ACTIVE));
+            }
+            return Html::a($icon, $url, [
+                'title' => $label
+            ]);
+        }
+        return null;
+    }
     /**
      * Renders change status link.
      * @param string $url

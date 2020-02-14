@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extensions/yiichimp" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/yiichimp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/backend/config/reportsmenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/backend/config/reportsmenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/grid/CustomerActionColumn.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/customer/grid/CustomerActionColumn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/workshops/WorkshopsSales.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/workshops/WorkshopsSales.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/frontend/modules/site/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/frontend/modules/site/views/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/frontend/views/common/_navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +175,11 @@
       <workItem from="1579795296220" duration="8219000" />
       <workItem from="1579856243221" duration="1192000" />
       <workItem from="1579980500069" duration="3037000" />
-      <workItem from="1580035047951" duration="2720000" />
+      <workItem from="1580035047951" duration="3526000" />
+      <workItem from="1580118406999" duration="6789000" />
+      <workItem from="1580828547379" duration="935000" />
+      <workItem from="1581327924952" duration="1134000" />
+      <workItem from="1581672633718" duration="4693000" />
     </task>
     <servers />
   </component>
@@ -203,10 +212,11 @@
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="656" y="295" width="424" height="484" key="FileChooserDialogImpl/67.27.1613.1023@67.27.1613.1023" timestamp="1575292475016" />
-    <state x="81" y="133" width="1599" height="917" key="find.popup" timestamp="1580040821242">
-      <screen x="67" y="27" width="1613" height="1023" />
+    <state x="83" y="133" width="1597" height="917" key="find.popup" timestamp="1581681988811">
+      <screen x="70" y="28" width="1610" height="1022" />
     </state>
-    <state x="81" y="133" width="1599" height="917" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1580040821242" />
+    <state x="81" y="133" width="1599" height="917" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1580132195084" />
+    <state x="83" y="133" width="1597" height="917" key="find.popup/70.28.1610.1022@70.28.1610.1022" timestamp="1581681988811" />
     <state x="598" y="451" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1576543528392">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>

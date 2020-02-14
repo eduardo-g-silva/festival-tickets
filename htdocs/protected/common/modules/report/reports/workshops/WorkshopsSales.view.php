@@ -8,14 +8,14 @@ use common\modules\report\reports;
 ?>
 
     <div class="text-center">
-        <h1>Tango Festival UK 2019 Workshops Report</h1>
-        <h4>This report shows workshps by teachers</h4>
+        <h1>Tango Festival UK 2020 Workshops Report</h1>
+        <h4>This report shows workshops by teachers</h4>
     </div>
     <hr/>
 
 <?php
 Table::create(array(
-    "dataStore"=>$this->dataStore('workshops_aldana'),
+    "dataStore"=>$this->dataStore('workshops_Godoy & Berra'),
     "showFooter"=>true,
     "columns"=>array(
         "isbn"=>array(
