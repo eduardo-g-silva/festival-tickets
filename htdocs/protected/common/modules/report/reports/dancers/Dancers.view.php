@@ -7,7 +7,7 @@ use \koolreport\widgets\google\LineChart;
 ?>
 
     <div class="text-center">
-        <h1>Tango Festival UK 2019 Sales Passes</h1>
+        <h1>Tango Festival UK 2020 Sales Passes</h1>
         <h4>This report shows dancers</h4>
     </div>
     <hr/>
