@@ -15,22 +15,22 @@ $subItems = [
                 ],
                 [
                     'label'     => MenuUtil::wrapLabel(UsniAdaptor::t('order', 'Workshops: Godoy & Berra')),
-                    'url'       => ['/report/default/wtotis'],
+                    'url'       => ['/report/default/wgodoy'],
                     'visible'   => UsniAdaptor::app()->user->can('access.report'),
                 ],
                 [
                     'label'     => MenuUtil::wrapLabel(UsniAdaptor::t('order', 'Workshops: Duran & Sanchez')),
-                    'url'       => ['/report/default/wzoto'],
+                    'url'       => ['/report/default/wduran'],
                     'visible'   => UsniAdaptor::app()->user->can('access.report'),
                 ],
                 [
                     'label'     => MenuUtil::wrapLabel(UsniAdaptor::t('order', 'Workshops: Bogado & Zuccarino')),
-                    'url'       => ['/report/default/wad'],
+                    'url'       => ['/report/default/wbogado'],
                     'visible'   => UsniAdaptor::app()->user->can('access.report'),
                 ],
                 [
                     'label'     => MenuUtil::wrapLabel(UsniAdaptor::t('order', 'Workshops: Juan & Stephania')),
-                    'url'       => ['/report/default/wad'],
+                    'url'       => ['/report/default/wjuan'],
                     'visible'   => UsniAdaptor::app()->user->can('access.report'),
                 ]
             ];

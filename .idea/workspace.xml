@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44624df5-a2b2-4884-804c-8bd16327b586" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/dancers/Dancers.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/dancers/Dancers.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wjuan/Wjuan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wjuan/Wjuan.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/backend/config/reportsmenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/backend/config/reportsmenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/controllers/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/controllers/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/festivalSales/run.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/festivalSales/run.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wad/Wad.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wduran/Wduran.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wad/Wad.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wduran/Wduran.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wtotis/Wtotis.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wbogado/Wbogado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wtotis/Wtotis.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wbogado/Wbogado.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wzoto/Wzoto.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wgodoy/Wgodoy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wzoto/Wzoto.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wgodoy/Wgodoy.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,22 +130,33 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/extensions/yiichimp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports" />
       <recent name="$PROJECT_DIR$/fonts" />
       <recent name="$PROJECT_DIR$/htdocs/protected/frontend/modules/site/views" />
       <recent name="$PROJECT_DIR$/htdocs/backend/assets/6b9f00a7" />
       <recent name="$PROJECT_DIR$/htdocs/backend/assets/6b9f00a7/css" />
-      <recent name="$PROJECT_DIR$/htdocs/backend/assets/c4e4d20b" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/extensions/yiichimp" />
-    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="wgodoy" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/htdocs/protected/common/modules/report/reports/wgodoy" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.wgodoy" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -173,7 +195,7 @@
       <workItem from="1580118406999" duration="6789000" />
       <workItem from="1580828547379" duration="935000" />
       <workItem from="1581327924952" duration="1134000" />
-      <workItem from="1581672633718" duration="4996000" />
+      <workItem from="1581672633718" duration="7406000" />
     </task>
     <servers />
   </component>
@@ -194,23 +216,28 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="566" y="27" width="586" height="1023" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575294658070">
-      <screen x="67" y="27" width="1613" height="1023" />
+    <state x="194" y="28" width="1476" height="1022" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581688750309">
+      <screen x="70" y="28" width="1610" height="1022" />
     </state>
     <state x="566" y="27" width="586" height="1023" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1575294658070" />
+    <state x="194" y="28" width="1476" height="1022" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.28.1610.1022@70.28.1610.1022" timestamp="1581688750309" />
     <state x="606" y="295" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576506751446">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="606" y="295" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1576506751446" />
+    <state x="501" y="167" width="737" height="750" key="#wzoto" timestamp="1581688502143">
+      <screen x="70" y="28" width="1610" height="1022" />
+    </state>
+    <state x="501" y="167" width="737" height="750" key="#wzoto/70.28.1610.1022@70.28.1610.1022" timestamp="1581688502143" />
     <state x="656" y="295" width="424" height="484" key="FileChooserDialogImpl" timestamp="1575292475016">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="656" y="295" width="424" height="484" key="FileChooserDialogImpl/67.27.1613.1023@67.27.1613.1023" timestamp="1575292475016" />
-    <state x="83" y="133" width="1597" height="917" key="find.popup" timestamp="1581681988811">
+    <state x="83" y="133" width="1597" height="917" key="find.popup" timestamp="1581689248405">
       <screen x="70" y="28" width="1610" height="1022" />
     </state>
     <state x="81" y="133" width="1599" height="917" key="find.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1580132195084" />
-    <state x="83" y="133" width="1597" height="917" key="find.popup/70.28.1610.1022@70.28.1610.1022" timestamp="1581681988811" />
+    <state x="83" y="133" width="1597" height="917" key="find.popup/70.28.1610.1022@70.28.1610.1022" timestamp="1581689248405" />
     <state x="598" y="451" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1576543528392">
       <screen x="67" y="27" width="1613" height="1023" />
     </state>

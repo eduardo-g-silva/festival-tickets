@@ -6,9 +6,10 @@ use yii\web\Controller;
 use koolreport;
 use common\modules\report\reports\workshops\WorkshopsSales;
 use common\modules\report\reports\dancers\Dancers;
-use common\modules\report\reports\wad\Wad;
-use common\modules\report\reports\wzoto\Wzoto;
-use common\modules\report\reports\wtotis\Wtotis;
+use common\modules\report\reports\wduran\Wduran;
+use common\modules\report\reports\wgodoy\Wgodoy;
+use common\modules\report\reports\wbogado\Wbogado;
+use common\modules\report\reports\wjuan\Wjuan;
 
 
 /**
@@ -31,19 +32,24 @@ class DefaultController extends Controller
         $WorkshopsSales = new Dancers();
         return $this->render('index', array("report"=>$WorkshopsSales,));
     }
-    public function actionWad()
+    public function actionWduran()
     {
-        $WorkshopsSales = new Wad();
+        $WorkshopsSales = new Wduran();
         return $this->render('index', array("report"=>$WorkshopsSales,));
     }
-    public function actionWzoto()
+    public function actionWgodoy()
     {
-        $WorkshopsSales = new Wzoto();
+        $WorkshopsSales = new Wgodoy();
         return $this->render('index', array("report"=>$WorkshopsSales,));
     }
-    public function actionWtotis()
+    public function actionWbogado()
     {
-        $WorkshopsSales = new Wtotis();
+        $WorkshopsSales = new Wbogado();
+        return $this->render('index', array("report"=>$WorkshopsSales,));
+    }
+    public function actionWjuan()
+    {
+        $WorkshopsSales = new Wjuan();
         return $this->render('index', array("report"=>$WorkshopsSales,));
     }
 }

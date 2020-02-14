@@ -10,7 +10,7 @@
     <meta name="author" content="KoolPHP Inc">
     <meta name="keywords" content="php reporting framework">
     <link rel="shortcut icon" href="../../assets/images/bar.png">
-    <title>UK Tango Festival 2019</title>
+    <title>UK Tango Festival 2020</title>
 
     <link href="../../assets/fontawesome/font-awesome.min.css" rel="stylesheet">
     <link href="../../assets/simpleline/simple-line-icons.min.css" rel="stylesheet">

@@ -1,11 +1,11 @@
 <?php
-namespace common\modules\report\reports\wtotis;
+namespace common\modules\report\reports\wduran;
 
 use \koolreport\processes\Group;
 use \koolreport\processes\Sort;
 use \koolreport\processes\Limit;
 
-class Wtotis extends \koolreport\KoolReport
+class Wduran extends \koolreport\KoolReport
 {
 
     protected function settings()
@@ -20,13 +20,17 @@ class Wtotis extends \koolreport\KoolReport
     public function setup()
     {
         $this->src('tickets')
-            ->query("SELECT * FROM qry_products_sold WHERE isbn LIKE 'w-totis%'")
+            ->query("SELECT * FROM qry_products_sold WHERE isbn LIKE 'w-duran%'")
+//            ->pipe(new Group(array(
+//                "by"=>"type",
+//                "sum"=>"dancers"
+//            )))
             ->pipe(new Sort(array(
                 "isbn"=>"desc",
                 'type' => "desc"
             )))
             //->pipe(new Limit(array(10)))
-            ->pipe($this->dataStore('wtotis'));
+            ->pipe($this->dataStore('wduran'));
 
         $this->src('tickets')
             ->query("SELECT * FROM qry_products_sold_count WHERE category_id != 4")

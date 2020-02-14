@@ -5,15 +5,15 @@ use \koolreport\widgets\google\GeoChart;
 ?>
 
     <div class="text-center">
-        <h1>Tango Festival UK 2019 Sales Passes</h1>
-        <h4>This report shows Zoto students</h4>
+        <h1>Tango Festival UK 2020 Sales Passes</h1>
+        <h4>This report shows godoy students</h4>
     </div>
     <hr/>
 
 
 <?php
 Table::create(array(
-    "dataStore"=>$this->dataStore('wzoto'),
+    "dataStore"=>$this->dataStore('wgodoy'),
     "showFooter"=>true,
     "columns"=>array(
         "isbn"=>array(
